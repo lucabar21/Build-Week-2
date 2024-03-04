@@ -91,29 +91,45 @@ main {
 /* #HEADER SETTING */
 #header {
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.15);
+  /* background-color: rgba(255, 255, 255, 0.15); */
 }
 
 .left-arrow,
 .right-arrow,
-.bell {
+.bell,
+.avatar {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.bell {
+  position: relative;
+}
+#point {
+  position: absolute;
+  top: -5px;
+  right: -5px;
 }
 
 .install {
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   padding: 0 10px;
   gap: 10px;
+  cursor: pointer;
 }
 .install p {
   margin: unset;
+}
+
+.avatar i {
+  color: #1fdf64;
 }
 
 .left-arrow img,
@@ -123,7 +139,7 @@ main {
 }
 /* TOP CARDS SETTINGS */
 #top-cards {
-  background-color: rgba(255, 255, 255, 0.15);
+  /* background-color: rgba(255, 255, 255, 0.15); */
   padding: 1rem;
 }
 #top-card {
@@ -283,4 +299,61 @@ h2 {
 
 .position-button {
   position: relative;
+}
+
+/* PLAYER BAR SETTINGS */
+.player-bar {
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  background-color: #000;
+  /* border: 1px solid #fff; */
+  position: fixed;
+  bottom: 0;
+}
+
+#play-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+#play-btn img {
+  width: 60%;
+}
+
+#progress {
+  width: 90%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  margin: unset;
+  margin-inline: 0.5rem;
+}
+
+#middle-bot {
+  align-items: center;
+}
+
+#right-player img {
+  width: 20px;
+}
+
+#progress-vol {
+  background-color: #fff;
+  width: 100px;
+  height: 3px;
+}
+
+#player-bar-img img {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+}
+
+#text-p-bar :nth-child(2) {
+  font-weight: 300;
+  font-size: 0.8rem;
+  opacity: 0.6;
 }
