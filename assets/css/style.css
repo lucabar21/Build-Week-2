@@ -24,3 +24,47 @@ main {
   width: 75%;
   background-color: aquamarine;
 }
+
+/* ////FOOTER//// */
+#footer {
+  background-color: rgb(18, 18, 18);
+}
+.top-links {
+  list-style-type: none;
+  line-height: 1.9rem;
+}
+.a-social {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: rgb(41, 41, 41);
+}
+.a-social:hover {
+  background-color: rgb(114, 114, 114);
+}
+.top-links a {
+  color: #a7a7a7;
+  text-decoration: none;
+}
+.top-links a:hover {
+  color: #ffffff;
+  text-decoration: underline rgb(114, 114, 114);
+}
+.hr {
+  background-color: #a7a7a7;
+  height: 1px;
+  width: 100%;
+  margin-block: 2rem;
+}
+.footer-bottom {
+  background-color: rgb(18, 18, 18);
+}
+.bottom-link a {
+  color: #a7a7a7;
+}
