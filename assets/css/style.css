@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Circular";
+}
+body {
+  background-color: rgb(3, 3, 3);
+}
+aside {
+  width: 25%;
+  background-color: blueviolet;
+  padding: 5px;
+}
+
+#nav {
+  background-color: red;
+}
+#library {
+  background-color: blanchedalmond;
+}
+main {
+  width: 75%;
+  background-color: aquamarine;
+}
