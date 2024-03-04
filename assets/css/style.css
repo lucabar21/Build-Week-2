@@ -10,16 +10,79 @@ body {
 }
 aside {
   width: 25%;
-  background-color: blueviolet;
+  background-color: #000000;
   padding: 5px;
 }
-
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
 #nav {
-  background-color: red;
+  background-color: #121212;
+  border-radius: 8px;
+  margin-bottom: 5px;
 }
+
+#nav ul {
+  padding: 8px 12px;
+  list-style: none;
+}
+#homeBTN,
+#cercaBTN {
+  padding: 4px 12px;
+}
+
+#homeBTN > a,
+#cercaBTN > a {
+  gap: 20px;
+  height: 40px;
+}
+
+#homeBTN span,
+#cercaBTN span {
+  margin-block: 0px;
+  font-weight: 700;
+}
+
 #library {
-  background-color: blanchedalmond;
+  background-color: #121212;
+  border-radius: 8px;
+  padding: 8px 16px;
+  padding-top: 18px;
+  color: #f4f4f4;
 }
+#library-header {
+  gap: 8px;
+}
+
+#pl-al-ar button {
+  border-radius: 20px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #f4f4f4;
+  font-weight: lighter;
+  font-size: 14px;
+  padding-inline: 10px;
+  padding-block: 6px;
+}
+
+#pl-al-ar button:hover {
+  background-color: #313030;
+}
+
+.list-item:hover {
+  background-color: #2a2a2a5b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#playlist-img {
+  width: 53px;
+}
+#playlist-info {
+  font-size: small;
+}
+
 main {
   width: 75%;
   background-color: aquamarine;
