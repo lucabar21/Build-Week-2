@@ -89,7 +89,7 @@ a {
 
 main {
   width: 75%;
-  /* background-color: aquamarine; */
+  background-color: rgb(18, 18, 18);
 }
 
 /* #HEADER SETTING */
@@ -200,9 +200,7 @@ main {
 }
 
 /* ////FOOTER//// */
-#footer {
-  background-color: rgb(18, 18, 18);
-}
+
 .top-links {
   list-style-type: none;
   line-height: 1.9rem;
@@ -233,15 +231,29 @@ main {
 .hr {
   background-color: #a7a7a7;
   height: 1px;
-  width: 100%;
-  margin-block: 2rem;
+  width: 95%;
+  opacity: 0.2;
+  margin-inline: auto;
 }
 .footer-bottom {
   background-color: rgb(18, 18, 18);
+  margin-bottom: 150px;
+}
+.bottom-link {
+  padding-left: 15px;
+  line-height: 6px;
 }
 .bottom-link a {
   color: #a7a7a7;
 }
+.bottom-link a:hover {
+  color: #ffffff;
+}
+.copy {
+  color: #a7a7a7;
+}
+
+/* ///////Fine footer/////////// */
 
 .card-text h6 {
   color: white;
