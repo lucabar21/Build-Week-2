@@ -47,16 +47,27 @@ a {
 #library {
   background-color: #121212;
   border-radius: 8px;
-  padding: 8px 16px;
-  padding-top: 18px;
+
   color: #f4f4f4;
 }
 #library-header {
   gap: 8px;
 }
-
+.plus-arrow {
+  padding: 0.4rem;
+  border-radius: 50%;
+}
+#src-icon {
+  padding-inline: 0.5rem;
+  padding-bottom: 0.3rem;
+  padding-top: 0.2rem;
+  border-radius: 50%;
+}
 .plus-arrow:hover {
-  background-color: #2a2a2a;
+  background-color: #1a1a1a;
+}
+#src-icon:hover {
+  background-color: #1a1a1a;
 }
 
 #pl-al-ar button {
@@ -73,6 +84,69 @@ a {
 #pl-al-ar button:hover {
   background-color: #313030;
 }
+#rec-added {
+  color: #ffffff8e;
+  font-size: 14px;
+}
+#rec-added:hover {
+  scale: 1.03;
+  color: #fff;
+  z-index: 1;
+}
+
+/*DROPDOWN MENU*/
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: transparent;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  background-color: #282828;
+  min-width: 170px;
+  z-index: 1;
+}
+.dropdown-content li {
+  font-size: 11px;
+  list-style: none;
+  padding-inline: 1rem;
+  margin-inline: 5px;
+}
+
+.dropdown-content a {
+  font-size: 14px;
+  padding-inline: 1rem;
+  margin-inline: 5px;
+  line-height: 3;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #3e3e3e;
+  border-radius: 2px;
+}
+
+.dropdown-content a:focus {
+  color: #1fdf64;
+}
+
+.show {
+  display: block;
+}
 
 .list-item:hover {
   background-color: #2a2a2a5b;
@@ -84,17 +158,20 @@ a {
   width: 53px;
 }
 #playlist-info {
-  font-size: small;
+  font-size: 16px;
+}
+
+#playlist-info p:nth-of-type(2) {
+  font-size: 13px;
 }
 
 main {
-  /* background-color: aquamarine; */
+  position: relative;
 }
 
 /* #HEADER SETTING */
 #header {
   color: #fff;
-  /* background-color: rgba(255, 255, 255, 0.15); */
 }
 
 .left-arrow,
