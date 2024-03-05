@@ -186,6 +186,15 @@ main {
   opacity: 0;
 }
 
+#middle-top > div {
+  display: flex;
+  align-items: center;
+}
+
+#middle-top img {
+  width: 20px;
+}
+
 #top-card:hover #play-stop {
   opacity: 1;
   transform: scale(1.1);
