@@ -19,7 +19,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="./assets/css/circular-font.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style-album.css" />
   </head>
   <body>
     <div class="container-fluid">
@@ -432,412 +432,83 @@
               </div>
             </div>
           </div>
-          <!-- TOP CARDS START -->
-          <div id="top-cards" class="container-fluid">
-            <div class="row gap-2">
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop" overlay>
-                  <i class="bi bi-play-fill"></i>
+          <!-- inizio pag. Album -->
+          <div class="container-fluid d-flex flex-column Album">
+            <div class="container-fluid row d-flex section1">
+              <div class="d-flex title-album align-items-center">
+                <img
+                  src="assets/imgs/main/image-15.jpg"
+                  alt="image"
+                  class="object-fit-cover mb-4 me-4 img-album"
+                />
+                <div class="d-flex flex-column mt-5">
+                  <div>
+                    <div>
+                      <p class="fw-bold mb-0">Album</p>
+                    </div>
+                    <div class="title-h1-album">
+                      <h1 class="fw-bold">Titolo Album</h1>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="assets/imgs/main/image-13.jpg"
+                      alt="mini-immagine"
+                      class="img-mini"
+                    />
+                    <p class="fw-bold mt-3 ms-1">
+                      autore anno 10 brani, min tot
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
               </div>
             </div>
-          </div>
-          <!-- MAIN CARDS START-->
-          <div id="main-cards">
-            <div class="container-fluid d-flex flex-column">
-              <h2>Raccolta top 50</h2>
-              <div
-                class="container-fluid d-flex col-12 justify-content-between"
-              >
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img
-                        src="assets/imgs/main/image-1.jpg"
-                        class="img-fluid card-img-top img-cards"
-                        alt="img1"
+            <div class="container section2">
+              <div class="container-fluid d-flex align-items-center">
+                <div class="play-button-album my-3">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-play-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
                       />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
+                    </svg>
                   </div>
                 </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img
-                        src="assets/imgs/main/image-2.jpg"
-                        class="img-fluid card-img-top img-cards"
-                        alt="img1"
-                      />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
+                <div id="heart">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                    />
+                  </svg>
                 </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img
-                        src="assets/imgs/main/image-3.jpg"
-                        class="img-fluid card-img-top img-cards"
-                        alt="img1"
-                      />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img
-                        src="assets/imgs/main/image-4.jpg"
-                        class="img-fluid card-img-top img-cards"
-                        alt="img1"
-                      />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img
-                        src="assets/imgs/main/image-5.jpg"
-                        class="img-fluid card-img-top img-cards"
-                        alt="img1"
-                      />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img
-                        src="assets/imgs/main/image-6.jpg"
-                        class="img-fluid card-img-top img-cards"
-                        alt="img1"
-                      />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2>Raccolta top 100</h2>
-              <div
-                class="container-fluid d-flex col-12 justify-content-between"
-              >
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img
-                        src="assets/imgs/main/image-7.jpg"
-                        class="img-fluid card-img-top img-cards"
-                        alt="img1"
-                      />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img
-                        src="assets/imgs/main/image-8.jpg"
-                        class="img-fluid card-img-top img-cards"
-                        alt="img1"
-                      />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img
-                        src="assets/imgs/main/image-9.jpg"
-                        class="img-fluid card-img-top img-cards"
-                        alt="img1"
-                      />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img
-                        src="assets/imgs/main/image-10.jpg"
-                        class="img-fluid card-img-top img-cards"
-                        alt="img1"
-                      />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img
-                        src="assets/imgs/main/image-11.jpg"
-                        class="img-fluid card-img-top img-cards"
-                        alt="img1"
-                      />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-2 p-1 card-button">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img
-                        src="assets/imgs/main/image-12.jpg"
-                        class="img-fluid card-img-top img-cards"
-                        alt="img1"
-                      />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
+                <div id="heart1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -984,8 +655,17 @@
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      integrity="sha384-YvpcrYf0tYbc1q8xk38n6g4l9g5y20mm5ez9tkguat9pv7szu9edOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.getElementById("heart").addEventListener("click", function () {
+        this.classList.toggle("filled"); // Aggiunge o rimuove la classe 'filled'
+      });
+
+      document.getElementById("heart1").addEventListener("click", function () {
+        this.classList.toggle("filled1"); // Aggiunge o rimuove la classe 'filled'
+      });
+    </script>
   </body>
 </html>
