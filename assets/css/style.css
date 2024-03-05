@@ -8,15 +8,18 @@
 body {
   background-color: rgb(3, 3, 3);
 }
+
 aside {
   background-color: #000000;
   padding: 5px;
   position: fixed;
 }
+
 a {
   text-decoration: none;
   color: #f4f4f4;
 }
+
 #nav {
   background-color: #121212;
   border-radius: 8px;
@@ -27,6 +30,7 @@ a {
   padding: 8px 12px;
   list-style: none;
 }
+
 #homeBTN,
 #cercaBTN {
   padding: 4px 12px;
@@ -368,4 +372,64 @@ h2 {
   font-weight: 300;
   font-size: 0.8rem;
   opacity: 0.6;
+}
+
+/* ARTIST PAGE SETTINGS  */
+#hero-img {
+  width: 100%;
+}
+#hero-img img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.button-container {
+  margin-block: 1rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.play-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #1fdf64;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* TRACKS SETTINGS */
+.popular h4,
+h5 {
+  color: #fff;
+  font-weight: lighter;
+  font-size: medium;
+}
+#pop-tracks {
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2rem;
+}
+#art-details {
+  align-items: center;
+}
+.art-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+.art-img img {
+  width: 100%;
+
+  object-fit: cover;
+  border-radius: 5px;
+}
+.art-text :nth-child(1) {
+  font-size: 1.1rem;
+}
+.art-text :nth-child(2) {
+  font-size: 0.9rem;
+  opacity: 0.5;
 }

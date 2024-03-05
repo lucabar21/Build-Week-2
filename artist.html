@@ -360,358 +360,82 @@
               <div class="avatar d-flex"><i class="bi bi-person-circle"></i></div>
             </div>
           </div>
-          <!-- TOP CARDS START -->
-          <div id="top-cards" class="container-fluid">
-            <div class="row gap-2">
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop" overlay><i class="bi bi-play-fill"></i></div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
-              </div>
-              <div id="top-card" class="col-auto flex-fill d-flex">
-                <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
-                <div class="col-auto"><h4>A rotazione</h4></div>
-                <div id="play-stop"><i class="bi bi-play-fill"></i></div>
-              </div>
+          <!-- ARTIST START -->
+
+          <div id="artist-container" class="container-fluid">
+            <!-- HERO IMAGE -->
+            <div id="hero-img">
+              <img src="./assets/imgs/main/image-19.jpg" alt="artist-img" />
             </div>
-          </div>
-          <!-- MAIN CARDS START-->
-          <div id="main-cards">
-            <div class="container-fluid d-flex flex-column">
-              <h2>Raccolta top 50</h2>
-              <div class="container-fluid d-flex col-12 justify-content-between">
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img src="assets/imgs/main/image-1.jpg" class="img-fluid card-img-top img-cards" alt="img1" />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
+            <!-- BUTTONS  -->
+            <div class="button-container d-flex">
+              <div class="play-circle d-flex"><img src="./assets/imgs/play-svg.svg" alt="play" /></div>
+              <button type="button" class="btn btn-outline-light">Segui</button>
+              <div><img src="./assets/imgs/3points-34.svg" alt="more" /></div>
+            </div>
+            <!-- TRACKS -->
+            <div class="popular">
+              <h2>Popolari</h2>
+              <div class="tracks-containier d-flex flex-column gap-3 mb-3">
+                <!-- TRACK -->
+                <div id="pop-tracks" class="d-flex gap-4">
+                  <div id="art-num"><h4>1</h4></div>
+                  <div id="art-details" class="d-flex gap-3">
+                    <div class="art-img"><img src="./assets/imgs/main/image-14.jpg" alt="cover" /></div>
+                    <div class="art-text d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
                     </div>
                   </div>
+                  <div id="art-listens"><h5>1.876.532</h5></div>
+                  <div id="art-duration"><h5>3.15</h5></div>
                 </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img src="assets/imgs/main/image-2.jpg" class="img-fluid card-img-top img-cards" alt="img1" />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
+                <!-- TRACK -->
+                <div id="pop-tracks" class="d-flex gap-4">
+                  <div id="art-num"><h4>1</h4></div>
+                  <div id="art-details" class="d-flex gap-3">
+                    <div class="art-img"><img src="./assets/imgs/main/image-14.jpg" alt="cover" /></div>
+                    <div class="art-text d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
                     </div>
                   </div>
+                  <div id="art-listens"><h5>1.876.532</h5></div>
+                  <div id="art-duration"><h5>3.15</h5></div>
                 </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img src="assets/imgs/main/image-3.jpg" class="img-fluid card-img-top img-cards" alt="img1" />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
+                <!-- TRACK -->
+                <div id="pop-tracks" class="d-flex gap-4">
+                  <div id="art-num"><h4>1</h4></div>
+                  <div id="art-details" class="d-flex gap-3">
+                    <div class="art-img"><img src="./assets/imgs/main/image-14.jpg" alt="cover" /></div>
+                    <div class="art-text d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
                     </div>
                   </div>
+                  <div id="art-listens"><h5>1.876.532</h5></div>
+                  <div id="art-duration"><h5>3.15</h5></div>
                 </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img src="assets/imgs/main/image-4.jpg" class="img-fluid card-img-top img-cards" alt="img1" />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
+                <!-- TRACK -->
+                <div id="pop-tracks" class="d-flex gap-4">
+                  <div id="art-num"><h4>1</h4></div>
+                  <div id="art-details" class="d-flex gap-3">
+                    <div class="art-img"><img src="./assets/imgs/main/image-14.jpg" alt="cover" /></div>
+                    <div class="art-text d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
                     </div>
                   </div>
+                  <div id="art-listens"><h5>1.876.532</h5></div>
+                  <div id="art-duration"><h5>3.15</h5></div>
                 </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img src="assets/imgs/main/image-5.jpg" class="img-fluid card-img-top img-cards" alt="img1" />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
+                <!-- TRACK -->
+                <div id="pop-tracks" class="d-flex gap-4">
+                  <div id="art-num"><h4>1</h4></div>
+                  <div id="art-details" class="d-flex gap-3">
+                    <div class="art-img"><img src="./assets/imgs/main/image-14.jpg" alt="cover" /></div>
+                    <div class="art-text d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
                     </div>
                   </div>
-                </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img src="assets/imgs/main/image-6.jpg" class="img-fluid card-img-top img-cards" alt="img1" />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2>Raccolta top 100</h2>
-              <div class="container-fluid d-flex col-12 justify-content-between">
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img src="assets/imgs/main/image-7.jpg" class="img-fluid card-img-top img-cards" alt="img1" />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img src="assets/imgs/main/image-8.jpg" class="img-fluid card-img-top img-cards" alt="img1" />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img src="assets/imgs/main/image-9.jpg" class="img-fluid card-img-top img-cards" alt="img1" />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img src="assets/imgs/main/image-10.jpg" class="img-fluid card-img-top img-cards" alt="img1" />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-2 p-1">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img src="assets/imgs/main/image-11.jpg" class="img-fluid card-img-top img-cards" alt="img1" />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-2 p-1 card-button">
-                  <div class="stile-card">
-                    <div class="position-button">
-                      <img src="assets/imgs/main/image-12.jpg" class="img-fluid card-img-top img-cards" alt="img1" />
-                      <div class="play-button">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-play-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="card-text">
-                      <h6>CAntante</h6>
-                      <p>titolo canzone in molte lingue insieme</p>
-                    </div>
-                  </div>
+                  <div id="art-listens"><h5>1.876.532</h5></div>
+                  <div id="art-duration"><h5>3.15</h5></div>
                 </div>
               </div>
             </div>
