@@ -465,19 +465,63 @@ h2 {
 }
 
 /* ARTIST PAGE SETTINGS  */
-#hero-img {
+
+/* HERO SECTION */
+
+#hero-artist {
   width: 100%;
+  position: relative;
 }
-#hero-img img {
+
+#hero-artist > img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   width: 100%;
-  height: 350px;
+  height: 400px;
   object-fit: cover;
+}
+
+#hero-absolute {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+}
+
+#verified {
+  column-gap: 10px;
+  align-items: center;
+}
+#verified > h4 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: unset;
+  font-weight: 400;
+}
+
+#verified > img {
+  width: 30px;
+  height: 30px;
+}
+
+#hero-h1 > h1 {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+#monthly-listner > h5 {
+  color: #fff;
+  font-size: 1.3rem;
 }
 
 .button-container {
   margin-block: 1rem;
   align-items: center;
   gap: 2rem;
+}
+
+.button-container > div img {
+  width: 15px;
 }
 
 .play-circle {
@@ -502,6 +546,10 @@ h5 {
   justify-content: space-between;
   padding-inline: 2rem;
 }
+#art-num > h4 {
+  font-size: 1.2rem;
+}
+
 #art-details {
   align-items: center;
 }
@@ -522,4 +570,85 @@ h5 {
 .art-text :nth-child(2) {
   font-size: 0.9rem;
   opacity: 0.5;
+}
+
+.other > a h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-block: 2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.disc-text > h4 {
+  font-size: 1.2rem;
+  color: white;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* DISCOGRAPHY SETTINGS */
+.disc-card {
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#d-img-card {
+  position: relative;
+}
+.disc-card img {
+  width: 100%;
+}
+
+.d-card-body {
+  color: #fff;
+}
+.d-card-body > h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.d-card-body > h5 {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.d-play-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1fdf64;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  right: 5px;
+  bottom: 5px;
+  opacity: 0;
+}
+
+@keyframes play-button {
+  from {
+    opacity: 0;
+    transform: translatey(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
+.disc-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.5s;
+}
+
+.disc-card:hover .d-play-circle {
+  animation-name: play-button;
+  animation-duration: 1s;
+  transition: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.d-play-circle > img {
+  width: 40%;
 }
