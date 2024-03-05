@@ -64,108 +64,147 @@
             </li>
           </ul>
         </div>
-        <div id="library" class="d-flex flex-grow-3">
-          <div class="d-flex flex-grow-3">
+        <div id="library" class="d-flex flex-column">
+          <header id="library-header" class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center me-auto">
+              <a href="" class="d-flex justify-content-start align-items-center">
+                <span class="d-flex me-3">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-encore-id="icon"
+                    role="img"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    class="Svg-sc-ytk21e-0 bneLcE"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                      fill="#A7A7A7"
+                    ></path>
+                  </svg>
+                </span>
+                <span>La tua libreria</span>
+              </a>
+            </div>
+            <a href="" class="d-flex">
+              <span class="plus-arrow me-1">
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  class="Svg-sc-ytk21e-0 dYnaPI"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"
+                    fill="#A7A7A7"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+            <span class="plus-arrow">
+              <a href="" class="d-flex">
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  class="Svg-sc-ytk21e-0 cAMMLk"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="M7.19 1A.749.749 0 0 1 8.47.47L16 7.99l-7.53 7.521a.75.75 0 0 1-1.234-.815.75.75 0 0 1 .174-.243l5.72-5.714H.75a.75.75 0 1 1 0-1.498h12.38L7.41 1.529a.749.749 0 0 1-.22-.53z"
+                    fill="#A7A7A7"
+                  ></path>
+                </svg>
+              </a>
+            </span>
+          </header>
+          <div id="pl-al-ar" class="d-flex align-items-center my-4">
+            <button class="me-1">Playlist</button>
+            <button class="me-1">Album</button>
+            <button class="me-1">Artisti</button>
+          </div>
+          <div id="src-recAdded" class="d-flex align-items-center justify-content-between pb-2">
             <div>
-              <header id="library-header" class="d-flex">
-                <div class="d-flex flex-row align-items-center justify-content-between">
-                  <div class="d-flex align-items-center me-auto">
-                    <a href="" class="d-flex justify-content-start align-items-center">
-                      <!--///////////////////ICONA//////////////////-->
-                      <span class="d-flex me-3">
-                        <svg
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          xmlns="http://www.w3.org/2000/svg"
-                          data-encore-id="icon"
-                          role="img"
-                          aria-hidden="true"
-                          viewBox="0 0 24 24"
-                          class="Svg-sc-ytk21e-0 bneLcE"
-                          width="24"
-                          height="24"
-                        >
-                          <path
-                            d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
-                            fill="#A7A7A7"
-                          ></path>
-                        </svg>
-                      </span>
-                      <span>La tua libreria</span>
-                    </a>
-                  </div>
-                  <span class="d-block">
-                    <a href="" class="d-flex">
-                      <span class="d-flex">
-                        <!--///////////////////ICONA//////////////////-->
-                        <svg
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          xmlns="http://www.w3.org/2000/svg"
-                          data-encore-id="icon"
-                          role="img"
-                          aria-hidden="true"
-                          viewBox="0 0 16 16"
-                          class="Svg-sc-ytk21e-0 dYnaPI"
-                          width="16"
-                          height="16"
-                        >
-                          <path
-                            d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"
-                            fill="#A7A7A7"
-                          ></path>
-                        </svg>
-                      </span>
-                    </a>
-                  </span>
-                  <span>
-                    <!--///////////////////ICONA//////////////////-->
-                    <a href="" class="d-flex">
-                      <svg
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        xmlns="http://www.w3.org/2000/svg"
-                        data-encore-id="icon"
-                        role="img"
-                        aria-hidden="true"
-                        viewBox="0 0 16 16"
-                        class="Svg-sc-ytk21e-0 cAMMLk"
-                        width="16"
-                        height="16"
-                      >
-                        <path
-                          d="M7.19 1A.749.749 0 0 1 8.47.47L16 7.99l-7.53 7.521a.75.75 0 0 1-1.234-.815.75.75 0 0 1 .174-.243l5.72-5.714H.75a.75.75 0 1 1 0-1.498h12.38L7.41 1.529a.749.749 0 0 1-.22-.53z"
-                          fill="#A7A7A7"
-                        ></path>
-                      </svg>
-                    </a>
-                  </span>
-                </div>
-              </header>
-              <div id="pl-al-ar" class="d-flex align-items-center my-4">
-                <button class="me-1">Playlist</button>
-                <button class="me-1">Album</button>
-                <button class="me-1">Artisti</button>
-              </div>
-              <div id="src-recAdded" class="d-flex align-items-center justify-content-between pb-2">
-                <div>
-                  <!--///////////////////ICONA//////////////////-->
-                  <a href="">
+              <a href="">
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="17"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#B3B3B3"
+                >
+                  <path
+                    d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z"
+                    fill="#B3B3B3"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <span class="me-2">Aggiunti di recente</span>
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  class="Svg-sc-ytk21e-0 cAMMLk"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z"
+                    fill="#A7A7A7"
+                  ></path>
+                </svg>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>Ordina per</li>
+                <li><a class="dropdown-item" href="#">Recenti</a></li>
+                <li><a class="dropdown-item" href="#">Aggiunti di recente</a></li>
+                <li><a class="dropdown-item" href="#">Ordine alfabetico</a></li>
+                <li><a class="dropdown-item" href="#">Autore</a></li>
+                <hr />
+                <li>Visualizza come</li>
+                <li>
+                  <a class="dropdown-item" href="#">
                     <svg
                       xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="17"
-                      viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
-                      fill="#B3B3B3"
+                      data-encore-id="icon"
+                      role="img"
+                      aria-hidden="true"
+                      viewBox="0 0 16 16"
+                      class="Svg-sc-ytk21e-0 dYnaPI"
+                      width="16"
+                      height="16"
                     >
                       <path
-                        d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z"
-                        fill="#B3B3B3"
+                        d="M15.5 13.5H.5V12h15v1.5zm0-4.75H.5v-1.5h15v1.5zm0-4.75H.5V2.5h15V4z"
+                        fill-opacity="0.9"
+                        fill="#FFFFFF"
                       ></path>
                     </svg>
+                    Compatta
                   </a>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span>Aggiunti di recente</span>
-                  <!--///////////////////ICONA//////////////////-->
-                  <a href="">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
                     <svg
                       xmlns:xlink="http://www.w3.org/1999/xlink"
                       xmlns="http://www.w3.org/2000/svg"
@@ -182,91 +221,114 @@
                         fill="#A7A7A7"
                       ></path>
                     </svg>
+                    Elenco
                   </a>
-                </div>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      data-encore-id="icon"
+                      role="img"
+                      aria-hidden="true"
+                      viewBox="0 0 16 16"
+                      class="Svg-sc-ytk21e-0 dYnaPI"
+                      width="16"
+                      height="16"
+                    >
+                      <path
+                        d="M1 1h6v6H1V1zm1.5 1.5v3h3v-3h-3zM1 9h6v6H1V9zm1.5 1.5v3h3v-3h-3zM9 1h6v6H9V1zm1.5 1.5v3h3v-3h-3zM9 9h6v6H9V9zm1.5 1.5v3h3v-3h-3z"
+                        fill-opacity="0.9"
+                        fill="#FFFFFF"
+                      ></path>
+                    </svg>
+                    Griglia
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="playlist">
+            <div class="list-item d-flex p-1 align-items-center">
+              <div id="playlist-img">
+                <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
               </div>
-              <div id="playlist">
-                <div class="list-item d-flex p-1 align-items-center">
-                  <div id="playlist-img">
-                    <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
-                  </div>
-                  <div id="playlist-info" class="ms-2">
-                    <p class="mb-0 fw-bold">Titolo</p>
-                    <p class="mb-0 fw-light">Playlist/Artista · autore</p>
-                  </div>
-                </div>
-                <div class="list-item d-flex p-1 align-items-center">
-                  <div id="playlist-img">
-                    <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
-                  </div>
-                  <div id="playlist-info" class="ms-2">
-                    <p class="mb-0 fw-bold">Titolo</p>
-                    <p class="mb-0 fw-light">Playlist/Artista · autore</p>
-                  </div>
-                </div>
-                <div class="list-item d-flex p-1 align-items-center">
-                  <div id="playlist-img">
-                    <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
-                  </div>
-                  <div id="playlist-info" class="ms-2">
-                    <p class="mb-0 fw-bold">Titolo</p>
-                    <p class="mb-0 fw-light">Playlist/Artista · autore</p>
-                  </div>
-                </div>
-                <div class="list-item d-flex p-1 align-items-center">
-                  <div id="playlist-img">
-                    <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
-                  </div>
-                  <div id="playlist-info" class="ms-2">
-                    <p class="mb-0 fw-bold">Titolo</p>
-                    <p class="mb-0 fw-light">Playlist/Artista · autore</p>
-                  </div>
-                </div>
-                <div class="list-item d-flex p-1 align-items-center">
-                  <div id="playlist-img">
-                    <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
-                  </div>
-                  <div id="playlist-info" class="ms-2">
-                    <p class="mb-0 fw-bold">Titolo</p>
-                    <p class="mb-0 fw-light">Playlist/Artista · autore</p>
-                  </div>
-                </div>
-                <div class="list-item d-flex p-1 align-items-center">
-                  <div id="playlist-img">
-                    <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
-                  </div>
-                  <div id="playlist-info" class="ms-2">
-                    <p class="mb-0 fw-bold">Titolo</p>
-                    <p class="mb-0 fw-light">Playlist/Artista · autore</p>
-                  </div>
-                </div>
-                <div class="list-item d-flex p-1 align-items-center">
-                  <div id="playlist-img">
-                    <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
-                  </div>
-                  <div id="playlist-info" class="ms-2">
-                    <p class="mb-0 fw-bold">Titolo</p>
-                    <p class="mb-0 fw-light">Playlist/Artista · autore</p>
-                  </div>
-                </div>
-                <div class="list-item d-flex p-1 align-items-center">
-                  <div id="playlist-img">
-                    <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
-                  </div>
-                  <div id="playlist-info" class="ms-2">
-                    <p class="mb-0 fw-bold">Titolo</p>
-                    <p class="mb-0 fw-light">Playlist/Artista · autore</p>
-                  </div>
-                </div>
-                <div class="list-item d-flex p-1 align-items-center">
-                  <div id="playlist-img">
-                    <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
-                  </div>
-                  <div id="playlist-info" class="ms-2">
-                    <p class="mb-0 fw-bold">Titolo</p>
-                    <p class="mb-0 fw-light">Playlist/Artista · autore</p>
-                  </div>
-                </div>
+              <div id="playlist-info" class="ms-2">
+                <p class="mb-0 fw-bold">Titolo</p>
+                <p class="mb-0 fw-light">Playlist/Artista · autore</p>
+              </div>
+            </div>
+            <div class="list-item d-flex p-1 align-items-center">
+              <div id="playlist-img">
+                <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
+              </div>
+              <div id="playlist-info" class="ms-2">
+                <p class="mb-0 fw-bold">Titolo</p>
+                <p class="mb-0 fw-light">Playlist/Artista · autore</p>
+              </div>
+            </div>
+            <div class="list-item d-flex p-1 align-items-center">
+              <div id="playlist-img">
+                <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
+              </div>
+              <div id="playlist-info" class="ms-2">
+                <p class="mb-0 fw-bold">Titolo</p>
+                <p class="mb-0 fw-light">Playlist/Artista · autore</p>
+              </div>
+            </div>
+            <div class="list-item d-flex p-1 align-items-center">
+              <div id="playlist-img">
+                <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
+              </div>
+              <div id="playlist-info" class="ms-2">
+                <p class="mb-0 fw-bold">Titolo</p>
+                <p class="mb-0 fw-light">Playlist/Artista · autore</p>
+              </div>
+            </div>
+            <div class="list-item d-flex p-1 align-items-center">
+              <div id="playlist-img">
+                <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
+              </div>
+              <div id="playlist-info" class="ms-2">
+                <p class="mb-0 fw-bold">Titolo</p>
+                <p class="mb-0 fw-light">Playlist/Artista · autore</p>
+              </div>
+            </div>
+            <div class="list-item d-flex p-1 align-items-center">
+              <div id="playlist-img">
+                <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
+              </div>
+              <div id="playlist-info" class="ms-2">
+                <p class="mb-0 fw-bold">Titolo</p>
+                <p class="mb-0 fw-light">Playlist/Artista · autore</p>
+              </div>
+            </div>
+            <div class="list-item d-flex p-1 align-items-center">
+              <div id="playlist-img">
+                <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
+              </div>
+              <div id="playlist-info" class="ms-2">
+                <p class="mb-0 fw-bold">Titolo</p>
+                <p class="mb-0 fw-light">Playlist/Artista · autore</p>
+              </div>
+            </div>
+            <div class="list-item d-flex p-1 align-items-center">
+              <div id="playlist-img">
+                <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
+              </div>
+              <div id="playlist-info" class="ms-2">
+                <p class="mb-0 fw-bold">Titolo</p>
+                <p class="mb-0 fw-light">Playlist/Artista · autore</p>
+              </div>
+            </div>
+            <div class="list-item d-flex p-1 align-items-center">
+              <div id="playlist-img">
+                <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
+              </div>
+              <div id="playlist-info" class="ms-2">
+                <p class="mb-0 fw-bold">Titolo</p>
+                <p class="mb-0 fw-light">Playlist/Artista · autore</p>
               </div>
             </div>
           </div>
