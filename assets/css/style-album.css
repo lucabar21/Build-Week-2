@@ -416,11 +416,50 @@ h2 {
   right: 2px;
 }
 
-#heart1 svg {
+#heart svg {
   width: 34px;
   height: 34px;
+  transition: trasform 0.3s ease;
+  cursor: pointer;
 }
 
-#heart1.filled1 {
+#heart svg:hover {
+  transform: scale(1.1);
+}
+
+#heart.filled {
   color: #1fdf64;
+}
+
+.three-point-menu svg {
+  width: 38px;
+  height: 38px;
+  transition: trasform 0.3s ease;
+  cursor: pointer;
+}
+
+.elenco div h6 {
+  color: white;
+}
+
+.three-point-menu svg:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.button-list i {
+  color: #fff;
+}
+
+.info-artist :nth-child(2) {
+  color: #a7a7a7;
+}
+
+.music-list {
+  border-radius: 1.8px;
+}
+
+.music-list:hover {
+  background-color: #888888;
+  opacity: 0.4;
 }
