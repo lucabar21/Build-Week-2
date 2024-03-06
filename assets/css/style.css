@@ -544,7 +544,7 @@ h5 {
   .src-wrap > #src-icon,
   #rec-added > span,
   #rec-added > .dropdown,
-  #playlist-info > p {
+  #playlist-info > a {
     display: none;
   }
 }
@@ -554,7 +554,7 @@ h5 {
   header > .plus,
   .src-wrap > #src-icon,
   #rec-added > .dropdown,
-  #playlist-info > p {
+  #playlist-info > a {
     display: block;
   }
 
@@ -562,10 +562,10 @@ h5 {
     padding-inline: 16px;
   }
 
-  #playlist-info > p > svg {
+  #playlist-info > a > svg {
     display: none;
   }
-  #playlist-info > p > {
+  #playlist-info > a > {
     font-size: 10px;
   }
 }
@@ -579,11 +579,11 @@ h5 {
   .src-wrap > #src-icon,
   #rec-added > span,
   #rec-added > .dropdown,
-  #playlist-info > p,
-  #playlist-info > p > svg {
+  #playlist-info > a,
+  #playlist-info > a > svg {
     display: block;
   }
-  #playlist-info > p > svg {
+  #playlist-info > a > svg {
     display: inline-block;
     width: 10px;
   }
@@ -591,7 +591,3 @@ h5 {
     padding: 16px;
   }
 }
-
-/*.src-wrap {
-  padding: 16px;
-}*/
