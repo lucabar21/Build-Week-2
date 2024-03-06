@@ -481,7 +481,7 @@ h2 {
   -webkit-appearance: none;
   width: 100%;
   height: 3px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 2px;
   cursor: pointer;
 }
@@ -491,8 +491,25 @@ h2 {
   height: 3px;
   border-radius: 50%;
   background: #fff;
-  /* stile per lo slider */
 }
+
+#volumeRange {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#volumeRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+}
+
 .slider-moved {
   background-color: #fff;
 }

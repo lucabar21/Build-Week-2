@@ -690,7 +690,8 @@
           <img src="./assets/imgs/device-svg.svg" alt="device" />
           <div id="volume" class="d-flex align-items-center gap-2">
             <img src="./assets/imgs/volume-svg.svg" alt="volume" />
-            <div id="progress-vol"></div>
+            <!-- <div id="progress-vol"></div> -->
+            <input id="volumeRange" type="range" min="0" max="1" step="0.1" value="1" />
             <!-- AUDIO CONTROLS START-->
             <audio id="song">
               <source src="./assets/songs/Tycho Jones - Dont Be Afraid.mp3" type="audio/mpeg" />
@@ -710,6 +711,7 @@
       let controls = document.getElementById("ctrl-play");
       let currentTimeDisplay = document.querySelector("#middle-bot small:first-child");
       let durationDisplay = document.querySelector("#middle-bot small:last-child");
+      const volume = document.getElementById("volumeRange");
 
       song.onloadedmetadata = () => {
         progress.max = song.duration;
@@ -745,6 +747,14 @@
         const seconds = Math.floor(time % 60);
         return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
       }
+      // GESTIONE BARRA DI VOLUME
+
+      volume.addEventListener("input", function () {
+        song.volume = parseFloat(this.value);
+      });
+      song.addEventListener("volumechange", function () {
+        volume.value = this.volume;
+      });
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
