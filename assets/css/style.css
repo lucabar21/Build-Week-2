@@ -493,6 +493,10 @@ h2 {
   background: #fff;
 }
 
+.slider-moved::-moz-range-progress {
+  background: #fff;
+}
+
 #volumeRange {
   -webkit-appearance: none;
   width: 100%;
