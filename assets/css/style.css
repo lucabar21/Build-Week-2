@@ -424,6 +424,7 @@ h2 {
   background-color: #ffffff;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 #play-btn i {
   text-align: center;
@@ -476,13 +477,15 @@ h2 {
 }
 #progress::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 10px;
-  height: 10px;
+  width: 3px;
+  height: 3px;
   border-radius: 50%;
   background: #fff;
   /* stile per lo slider */
 }
-
+.slider-moved {
+  background-color: #fff;
+}
 /* ARTIST PAGE SETTINGS  */
 
 /* HERO SECTION */
