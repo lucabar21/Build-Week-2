@@ -402,54 +402,56 @@
         <!-- MAIN START -->
         <main class="col-9 ms-auto">
           <!-- HEADER START -->
-          <div
-            id="header"
-            class="container-fluid d-flex justify-content-between mt-2"
-          >
-            <div class="arrow d-flex gap-3">
-              <div class="left-arrow d-flex">
-                <img src="./assets/imgs/svgexport-20.svg" alt="left" />
-              </div>
-              <div class="right-arrow d-flex">
-                <img src="./assets/imgs/svgexport-21.svg" alt="right" />
-              </div>
-            </div>
-            <div class="right-element d-flex gap-2">
-              <div class="install d-flex">
-                <img src="./assets/imgs/svgexport-22.svg" alt="download" />
-                <p>Installa app</p>
-              </div>
-              <div class="bell d-flex">
-                <img src="./assets/imgs/svgexport-23.svg" alt="bell" />
-                <img
-                  id="point"
-                  src="./assets/imgs/point-absolute-28.svg"
-                  alt="point"
-                />
-              </div>
-              <div class="avatar d-flex">
-                <i class="bi bi-person-circle"></i>
-              </div>
-            </div>
-          </div>
           <!-- inizio pag. Album -->
           <div class="container-fluid d-flex flex-column Album">
-            <div class="container-fluid row d-flex section1">
-              <div class="d-flex title-album align-items-center">
-                <img
-                  src="assets/imgs/main/image-15.jpg"
-                  alt="image"
-                  class="object-fit-cover mb-4 me-4 img-album"
-                />
-                <div class="d-flex flex-column mt-5">
-                  <div>
-                    <div>
-                      <p class="fw-bold mb-0">Album</p>
-                    </div>
-                    <div class="title-h1-album">
-                      <h1 class="fw-bold">Titolo Album</h1>
-                    </div>
+            <!-- <div class="container-fluid row d-flex section1"> -->
+            <div class="row mt-2 section1">
+              <div
+                id="header"
+                class="container-fluid d-flex justify-content-between mt-2"
+              >
+                <div class="arrow d-flex gap-3">
+                  <div class="left-arrow d-flex">
+                    <img src="./assets/imgs/svgexport-20.svg" alt="left" />
                   </div>
+                  <div class="right-arrow d-flex">
+                    <img src="./assets/imgs/svgexport-21.svg" alt="right" />
+                  </div>
+                </div>
+                <div class="right-element d-flex gap-2">
+                  <div class="install d-flex">
+                    <img src="./assets/imgs/svgexport-22.svg" alt="download" />
+                    <p>Installa app</p>
+                  </div>
+                  <div class="bell d-flex">
+                    <img src="./assets/imgs/svgexport-23.svg" alt="bell" />
+                    <img
+                      id="point"
+                      src="./assets/imgs/point-absolute-28.svg"
+                      alt="point"
+                    />
+                  </div>
+                  <div class="avatar d-flex">
+                    <i class="bi bi-person-circle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex title-album align-items-center">
+                <div class="img-container">
+                  <img
+                    src="assets/imgs/main/image-15.jpg"
+                    alt="image"
+                    class="img-fluid ms-2 mb-4 me-4 img-album"
+                  />
+                </div>
+                <div class="row d-flex flex-column gap-2">
+                  <div>
+                    <p class="fw-bold mb-0">Album</p>
+                  </div>
+                  <div class="title-h1-album">
+                    <h1>Titolo Album</h1>
+                  </div>
+
                   <div class="d-flex align-items-center">
                     <img
                       src="assets/imgs/main/image-13.jpg"
@@ -463,224 +465,214 @@
                 </div>
               </div>
             </div>
-            <div class="container section2">
-              <div class="container-fluid d-flex align-items-center gap-3">
-                <div class="play-button-album my-3">
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-play-fill"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
-                      />
-                    </svg>
-                  </div>
-                </div>
-
-                <div id="heart">
+            <!-- </div> -->
+            <!-- <div class="container section2"> -->
+            <div class="container-fluid d-flex align-items-center gap-3">
+              <div class="play-button-album my-3">
+                <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-heart-fill heart-svg"
+                    class="bi bi-play-fill"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
-                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                      d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
                     />
                   </svg>
                 </div>
-                <div class="three-point-menu">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-three-dots"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
-                    />
-                  </svg>
-                </div>
-
-                <div class="d-flex align-items-center gap-2 ms-auto elenco">
-                  <div>
-                    <h6 style="margin: unset">Elenco</h6>
-                  </div>
-                  <div class="button-list">
-                    <i class="bi bi-list d-inline-block"></i>
-                  </div>
-                </div>
               </div>
-              <div
-                class="d-flex align-items-center border-bottom border-light-subtle"
-              >
-                <div class="d-flex">
-                  <span>#</span>
 
-                  <div>
-                    <h6 style="margin: unset">Titolo</h6>
-                  </div>
-                </div>
-                <div class="ms-auto">
-                  <i class="bi bi-clock"></i>
-                </div>
+              <div id="heart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-heart-fill heart-svg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  />
+                </svg>
               </div>
-              <div class="list-album">
-                <div class="music-list d-flex flex-column gap-3 my-3">
-                  <div class="d-flex gap-4 align-items-center">
-                    <div><h4>1</h4></div>
-                    <div class="d-flex gap-3 align-items-center">
-                      <div class="info-artist d-flex flex-column">
-                        <a href="#">Titolo canzone</a
-                        ><a href="#">Nome artista</a>
-                      </div>
-                    </div>
+              <div class="three-point-menu">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-three-dots"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                  />
+                </svg>
+              </div>
 
-                    <div class="ms-auto align-items-center"><h5>3.15</h5></div>
-                  </div>
+              <div class="d-flex align-items-center gap-2 ms-auto elenco">
+                <div>
+                  <h6 style="margin: unset">Elenco</h6>
                 </div>
-                <div class="music-list d-flex flex-column gap-3 my-3">
-                  <div class="d-flex gap-4 align-items-center">
-                    <div><h4>1</h4></div>
-                    <div class="d-flex gap-3 align-items-center">
-                      <div class="info-artist d-flex flex-column">
-                        <a href="#">Titolo canzone</a
-                        ><a href="#">Nome artista</a>
-                      </div>
-                    </div>
-
-                    <div class="ms-auto align-items-center"><h5>3.15</h5></div>
-                  </div>
-                </div>
-                <div class="music-list d-flex flex-column gap-3 my-3">
-                  <div class="d-flex gap-4 align-items-center">
-                    <div><h4>1</h4></div>
-                    <div class="d-flex gap-3 align-items-center">
-                      <div class="info-artist d-flex flex-column">
-                        <a href="#">Titolo canzone</a
-                        ><a href="#">Nome artista</a>
-                      </div>
-                    </div>
-
-                    <div class="ms-auto align-items-center"><h5>3.15</h5></div>
-                  </div>
-                </div>
-                <div class="music-list d-flex flex-column gap-3 my-3">
-                  <div class="d-flex gap-4 align-items-center">
-                    <div><h4>1</h4></div>
-                    <div class="d-flex gap-3 align-items-center">
-                      <div class="info-artist d-flex flex-column">
-                        <a href="#">Titolo canzone</a
-                        ><a href="#">Nome artista</a>
-                      </div>
-                    </div>
-
-                    <div class="ms-auto align-items-center"><h5>3.15</h5></div>
-                  </div>
-                </div>
-                <div class="music-list d-flex flex-column gap-3 my-3">
-                  <div class="d-flex gap-4 align-items-center">
-                    <div><h4>1</h4></div>
-                    <div class="d-flex gap-3 align-items-center">
-                      <div class="info-artist d-flex flex-column">
-                        <a href="#">Titolo canzone</a
-                        ><a href="#">Nome artista</a>
-                      </div>
-                    </div>
-
-                    <div class="ms-auto align-items-center"><h5>3.15</h5></div>
-                  </div>
-                </div>
-                <div class="music-list d-flex flex-column gap-3 my-3">
-                  <div class="d-flex gap-4 align-items-center">
-                    <div><h4>1</h4></div>
-                    <div class="d-flex gap-3 align-items-center">
-                      <div class="info-artist d-flex flex-column">
-                        <a href="#">Titolo canzone</a
-                        ><a href="#">Nome artista</a>
-                      </div>
-                    </div>
-
-                    <div class="ms-auto align-items-center"><h5>3.15</h5></div>
-                  </div>
-                </div>
-                <div class="music-list d-flex flex-column gap-3 my-3">
-                  <div class="d-flex gap-4 align-items-center">
-                    <div><h4>1</h4></div>
-                    <div class="d-flex gap-3 align-items-center">
-                      <div class="info-artist d-flex flex-column">
-                        <a href="#">Titolo canzone</a
-                        ><a href="#">Nome artista</a>
-                      </div>
-                    </div>
-
-                    <div class="ms-auto align-items-center"><h5>3.15</h5></div>
-                  </div>
-                </div>
-                <div class="music-list d-flex flex-column gap-3 my-3">
-                  <div class="d-flex gap-4 align-items-center">
-                    <div><h4>1</h4></div>
-                    <div class="d-flex gap-3 align-items-center">
-                      <div class="info-artist d-flex flex-column">
-                        <a href="#">Titolo canzone</a
-                        ><a href="#">Nome artista</a>
-                      </div>
-                    </div>
-
-                    <div class="ms-auto align-items-center"><h5>3.15</h5></div>
-                  </div>
-                </div>
-                <div class="music-list d-flex flex-column gap-3 my-3">
-                  <div class="d-flex gap-4 align-items-center">
-                    <div><h4>1</h4></div>
-                    <div class="d-flex gap-3 align-items-center">
-                      <div class="info-artist d-flex flex-column">
-                        <a href="#">Titolo canzone</a
-                        ><a href="#">Nome artista</a>
-                      </div>
-                    </div>
-
-                    <div class="ms-auto align-items-center"><h5>3.15</h5></div>
-                  </div>
-                </div>
-                <div class="music-list d-flex flex-column gap-3 my-3">
-                  <div class="d-flex gap-4 align-items-center">
-                    <div><h4>1</h4></div>
-                    <div class="d-flex gap-3 align-items-center">
-                      <div class="info-artist d-flex flex-column">
-                        <a href="#">Titolo canzone</a
-                        ><a href="#">Nome artista</a>
-                      </div>
-                    </div>
-
-                    <div class="ms-auto align-items-center"><h5>3.15</h5></div>
-                  </div>
-                </div>
-                <div class="music-list d-flex flex-column gap-3 my-3">
-                  <div class="d-flex gap-4 align-items-center">
-                    <div><h4>1</h4></div>
-                    <div class="d-flex gap-3 align-items-center">
-                      <div class="info-artist d-flex flex-column">
-                        <a href="#">Titolo canzone</a
-                        ><a href="#">Nome artista</a>
-                      </div>
-                    </div>
-
-                    <div class="ms-auto align-items-center"><h5>3.15</h5></div>
-                  </div>
+                <div class="button-list">
+                  <i class="bi bi-list d-inline-block"></i>
                 </div>
               </div>
             </div>
+            <div
+              class="d-flex align-items-center border-bottom border-light-subtle"
+            >
+              <div class="d-flex">
+                <span class="mb-1">#</span>
+
+                <div>
+                  <h6 style="margin: unset">Titolo</h6>
+                </div>
+              </div>
+              <div class="ms-auto">
+                <i class="bi bi-clock mb-1"></i>
+              </div>
+            </div>
+            <div class="list-album">
+              <div class="music-list d-flex flex-column gap-3 my-3">
+                <div class="d-flex gap-4 mx-2 align-items-center">
+                  <div><h4>1</h4></div>
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="info-artist d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                    </div>
+                  </div>
+
+                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                </div>
+              </div>
+              <div class="music-list d-flex flex-column gap-3 my-3">
+                <div class="d-flex gap-4 mx-2 align-items-center">
+                  <div><h4>1</h4></div>
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="info-artist d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                    </div>
+                  </div>
+
+                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                </div>
+              </div>
+              <div class="music-list d-flex flex-column gap-3 my-3">
+                <div class="d-flex gap-4 mx-2 align-items-center">
+                  <div><h4>1</h4></div>
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="info-artist d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                    </div>
+                  </div>
+
+                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                </div>
+              </div>
+              <div class="music-list d-flex flex-column gap-3 my-3">
+                <div class="d-flex gap-4 mx-2 align-items-center">
+                  <div><h4>1</h4></div>
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="info-artist d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                    </div>
+                  </div>
+
+                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                </div>
+              </div>
+              <div class="music-list d-flex flex-column gap-3 my-3">
+                <div class="d-flex gap-4 mx-2 align-items-center">
+                  <div><h4>1</h4></div>
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="info-artist d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                    </div>
+                  </div>
+
+                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                </div>
+              </div>
+              <div class="music-list d-flex flex-column gap-3 my-3">
+                <div class="d-flex gap-4 mx-2 align-items-center">
+                  <div><h4>1</h4></div>
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="info-artist d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                    </div>
+                  </div>
+
+                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                </div>
+              </div>
+              <div class="music-list d-flex flex-column gap-3 my-3">
+                <div class="d-flex gap-4 mx-2 align-items-center">
+                  <div><h4>1</h4></div>
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="info-artist d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                    </div>
+                  </div>
+
+                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                </div>
+              </div>
+              <div class="music-list d-flex flex-column gap-3 my-3">
+                <div class="d-flex gap-4 mx-2 align-items-center">
+                  <div><h4>1</h4></div>
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="info-artist d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                    </div>
+                  </div>
+
+                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                </div>
+              </div>
+              <div class="music-list d-flex flex-column gap-3 my-3">
+                <div class="d-flex gap-4 mx-2 align-items-center">
+                  <div><h4>1</h4></div>
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="info-artist d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                    </div>
+                  </div>
+
+                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                </div>
+              </div>
+              <div class="music-list d-flex flex-column gap-3 my-3">
+                <div class="d-flex gap-4 mx-2 align-items-center">
+                  <div><h4>1</h4></div>
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="info-artist d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                    </div>
+                  </div>
+
+                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                </div>
+              </div>
+              <div class="music-list d-flex flex-column gap-3 my-3">
+                <div class="d-flex gap-4 mx-2 align-items-center">
+                  <div><h4>1</h4></div>
+                  <div class="d-flex gap-3 align-items-center">
+                    <div class="info-artist d-flex flex-column">
+                      <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                    </div>
+                  </div>
+
+                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
           </div>
 
           <div class="copyright my-5">

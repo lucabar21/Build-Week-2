@@ -374,15 +374,22 @@ h2 {
   transition: transform 0.3s ease;
 }
 
+.img-container {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 .img-album:hover {
   transform: scale(1.1);
 }
-/* main {
-  position: relative;
-} */
 
 .title-album {
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 .title-album h1 {
@@ -391,7 +398,6 @@ h2 {
 
 .title-h1-album {
   margin-bottom: -30px;
-  font-weight: 900;
 }
 
 .play-button-album {
@@ -462,4 +468,10 @@ h2 {
 .music-list:hover {
   background-color: #888888;
   opacity: 0.4;
+}
+
+@media screen and (max-width: 1200px) {
+  .title-h1-album h1 {
+    font-size: 65px;
+  }
 }
