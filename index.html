@@ -854,15 +854,21 @@
         <div id="middle-player" class="col-4 d-flex flex-column gap-1">
           <div id="middle-top" class="d-flex column-gap-4 justify-content-center">
             <div><img src="./assets/imgs/shuffle-svg.svg" alt="shuffle" /></div>
-            <div><img src="./assets/imgs/swipe-left-svg.svg" alt="left-swipe" /></div>
-            <div id="play-btn" class="d-flex"><img src="./assets/imgs/play-svg.svg" alt="play" /></div>
-            <div><img src="./assets/imgs/swipe-right.svg" alt="right-swipe" /></div>
+            <div>
+              <img src="./assets/imgs/swipe-left-svg.svg" alt="left-swipe" />
+            </div>
+            <div id="play-btn" class="d-flex">
+              <i id="ctrl-play" onclick="playPause()" class="bi bi-play-fill"></i>
+            </div>
+            <div>
+              <img src="./assets/imgs/swipe-right.svg" alt="right-swipe" />
+            </div>
             <div><img src="./assets/imgs/repeat-svg.svg" alt="repeat" /></div>
           </div>
           <div id="middle-bot" class="d-flex align-center">
             <small>0:00</small>
-            <div id="progress"></div>
-            <small>3:05</small>
+            <input id="progress" type="range" value="0" />
+            <small></small>
           </div>
         </div>
         <!-- PLAYER BAR RIGHT SECTION  -->
@@ -872,7 +878,14 @@
           <img src="./assets/imgs/device-svg.svg" alt="device" />
           <div id="volume" class="d-flex align-items-center gap-2">
             <img src="./assets/imgs/volume-svg.svg" alt="volume" />
-            <div id="progress-vol"></div>
+            <!-- <div id="progress-vol"></div> -->
+            <input id="volumeRange" type="range" min="0" max="1" step="0.1" value="1" />
+            <!-- AUDIO CONTROLS START-->
+            <audio id="song">
+              <source src="./assets/songs/Tycho Jones - Dont Be Afraid.mp3" type="audio/mpeg" />
+            </audio>
+
+            <!-- AUDIO CONTROLS END -->
           </div>
           <img src="./assets/imgs/extend-svg-23.svg" alt="extend" />
         </div>
@@ -884,23 +897,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function dropdownBTN() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      window.onclick = function (event) {
-        if (!event.target.matches(".dropbtn")) {
-          let dropdowns = document.getElementsByClassName("dropdown-content");
-          let i;
-          for (i = 0; i < dropdowns.length; i++) {
-            let openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-            }
-          }
-        }
-      };
-    </script>
     <script src="./style.js"></script>
   </body>
 </html>

@@ -519,6 +519,7 @@ h2 {
 .slider-moved {
   background-color: #fff;
 }
+
 /* ARTIST PAGE SETTINGS  */
 
 /* HERO SECTION */
@@ -709,6 +710,191 @@ h5 {
   width: 40%;
 }
 
+/* ALBUM PAGE SETTINGS */
+
+.section1 {
+  background-color: #645d5d;
+}
+
+.img-mini {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.img-album {
+  height: 218px;
+  width: 206px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.img-container {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-album:hover {
+  transform: scale(1.1);
+}
+
+.title-album {
+  margin-top: 40px;
+}
+
+.title-album h1 {
+  font-size: 100px;
+}
+
+.title-h1-album {
+  margin-bottom: -30px;
+}
+
+.play-button-album {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1fdf64;
+  position: relative;
+  transition: trasform 0.3s ease;
+  cursor: pointer;
+}
+
+.play-button-album:hover {
+  transform: scale(1.1);
+}
+
+.play-button-album div svg {
+  width: 44px;
+  height: 33px;
+  position: absolute;
+  top: 9px;
+  right: 2px;
+}
+
+#heart svg {
+  width: 34px;
+  height: 34px;
+  transition: trasform 0.3s ease;
+  cursor: pointer;
+}
+
+#heart svg:hover {
+  transform: scale(1.1);
+}
+
+#heart.filled {
+  color: #1fdf64;
+}
+
+.three-point-menu svg {
+  width: 38px;
+  height: 38px;
+  transition: trasform 0.3s ease;
+  cursor: pointer;
+}
+
+.elenco div h6 {
+  color: white;
+}
+
+.three-point-menu svg:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.button-list i {
+  color: #fff;
+}
+
+.info-artist :nth-child(2) {
+  color: #a7a7a7;
+}
+
+.music-list {
+  border-radius: 1.8px;
+}
+
+.music-list:hover {
+  background-color: #888888;
+  opacity: 0.4;
+}
+
+.bi-heart {
+  width: 20px;
+  color: white;
+  opacity: 0;
+}
+
+.bi-three-dots {
+  color: white;
+  font-size: 22px;
+  opacity: 0;
+}
+
+/* SEARCH PAGE SETTINGS */
+
+#search-bar::placeholder {
+  color: #ffff;
+}
+.search-card {
+  width: 200px;
+  height: 200px;
+  background-color: #dc148c;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card1 {
+  width: 90px;
+  height: 90px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: -10px;
+  right: -11px;
+  transform: rotate(25deg);
+}
+.card1 > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* DYNAIMC ELEMENTS SETTINGS */
+#serachArtistResult {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px 30px;
+}
+
+.res-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.res-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#serachArtistResult > h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: unset;
+}
+#serachArtistResult > span {
+  color: white;
+  opacity: 0.4;
+}
+
+/* MEDIA QUERY SETTINGS */
+
 @media (min-width: 576px) {
   #homeBTN > a > span,
   #cercaBTN > a > span,
@@ -764,5 +950,11 @@ h5 {
   }
   .src-wrap {
     padding: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title-h1-album h1 {
+    font-size: 65px;
   }
 }
