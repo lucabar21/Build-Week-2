@@ -1,28 +1,39 @@
+// SEARCH PAGE REQUEST
 const apiKey = "1e76c6751dmshf6e51120c249691p17f828jsn056e3af8a78c";
 const apiHost = "deezerdevs-deezer.p.rapidapi.com";
 
 const params = new URLSearchParams(window.location.search);
 const serachQuery = params.get("q");
 
-// INDEX PAGE REQUEST
-const homeURL = `https://deezerdevs-deezer.p.rapidapi.com/search?q=${serachQuery}`;
-fetch(homeURL, {
-  headers: {
-    "X-RapidAPI-Key": apiKey,
-    "X-RapidAPI-Host": apiHost,
-  },
-})
-  .then((response) => {
-    if (response.ok) {
-      console.log(response);
-      return response.json();
-    } else throw new Error("Qualcosa è andato storto");
-  })
+// COLLEGHIAMO IL PARAMETRO RICEVUTO DALL'INPUT CON L'URL PER AGGIRNARE DINAMICAMENTE L'ENDPOINT DELLA FETCH
+const form = document.getElementById("myForm");
 
-  .then((result) => {
-    console.log(result);
+form.addEventListener("input", () => {
+  const inputSearch = document.getElementById("search-bar");
+  const inputQuery = inputSearch.value;
+  console.log(inputQuery);
+  const searchURL = `https://deezerdevs-deezer.p.rapidapi.com/search?q=${inputQuery}`;
+
+  fetch(searchURL, {
+    headers: {
+      "X-RapidAPI-Key": apiKey,
+      "X-RapidAPI-Host": apiHost,
+    },
   })
-  .catch((error) => console.log(error));
+    .then((response) => {
+      if (response.ok) {
+        console.log(response);
+        return response.json();
+      } else throw new Error("Qualcosa è andato storto");
+    })
+
+    .then((result) => {
+      console.log(result);
+      const container = document.getElementById("search-container");
+      // container.innerHTML = "";
+    })
+    .catch((error) => console.log(error));
+});
 
 // ARTIST PAGE REQUEST
 // const artistURL = "https://deezerdevs-deezer.p.rapidapi.com/artist/";

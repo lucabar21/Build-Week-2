@@ -375,7 +375,7 @@
               <div class="right-arrow d-flex">
                 <img src="./assets/imgs/svgexport-21.svg" alt="right" />
               </div>
-              <form class="d-flex" role="search">
+              <form id="myForm" class="d-flex" role="search" action="">
                 <input
                   id="search-bar"
                   class="form-control me-2 rounded-pill"
@@ -403,9 +403,180 @@
 
           <div class="container-fluid">
             <h2>Sfoglia tutto</h2>
-            <div class="search-card p-2">
-              <span class="text-white fw-bold fs-4 px-2">Musica</span>
-              <div class="col card1"><img src="./assets/imgs/search/image-1.jpeg" alt="" /></div>
+            <div id="search-container">
+              <!-- DA FARE APPARIRE -->
+              <!-- SEZIONE ARTISTA -->
+              <div class="my-5">
+                <h2>Risultato più rilevante</h2>
+                <div id="serachArtistResult" class="d-flex flex-column gap-2">
+                  <div class="res-img"><img src="./assets/imgs/main/image-18.jpg" alt="cover" /></div>
+                  <h2>Nome Artista</h2>
+                  <span>Tipo</span>
+                </div>
+              </div>
+
+              <!-- SEZIONE BRANI -->
+              <div class="container-fluid d-flex">
+                <div class="mb-5 d-flex flex-column gap-3">
+                  <h2>Brani</h2>
+                  <div id="pop-tracks" class="d-flex gap-4">
+                    <div id="art-num"><h4>3</h4></div>
+                    <div id="art-details" class="d-flex gap-3 me-auto">
+                      <div class="art-img">
+                        <img src="./assets/imgs/main/image-14.jpg" alt="cover" />
+                      </div>
+                      <div class="art-text d-flex flex-column">
+                        <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                      </div>
+                    </div>
+                    <div id="art-duration"><h5>3.15</h5></div>
+                  </div>
+
+                  <div id="pop-tracks" class="d-flex gap-4">
+                    <div id="art-num"><h4>3</h4></div>
+                    <div id="art-details" class="d-flex gap-3 me-auto">
+                      <div class="art-img">
+                        <img src="./assets/imgs/main/image-14.jpg" alt="cover" />
+                      </div>
+                      <div class="art-text d-flex flex-column">
+                        <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                      </div>
+                    </div>
+                    <div id="art-duration"><h5>3.15</h5></div>
+                  </div>
+
+                  <div id="pop-tracks" class="d-flex gap-4">
+                    <div id="art-num"><h4>3</h4></div>
+                    <div id="art-details" class="d-flex gap-3 me-auto">
+                      <div class="art-img">
+                        <img src="./assets/imgs/main/image-14.jpg" alt="cover" />
+                      </div>
+                      <div class="art-text d-flex flex-column">
+                        <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                      </div>
+                    </div>
+                    <div id="art-duration"><h5>3.15</h5></div>
+                  </div>
+
+                  <div id="pop-tracks" class="d-flex gap-4">
+                    <div id="art-num"><h4>3</h4></div>
+                    <div id="art-details" class="d-flex gap-3 me-auto">
+                      <div class="art-img">
+                        <img src="./assets/imgs/main/image-14.jpg" alt="cover" />
+                      </div>
+                      <div class="art-text d-flex flex-column">
+                        <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                      </div>
+                    </div>
+                    <div id="art-duration"><h5>3.15</h5></div>
+                  </div>
+
+                  <div id="pop-tracks" class="d-flex gap-4">
+                    <div id="art-num"><h4>3</h4></div>
+                    <div id="art-details" class="d-flex gap-3 me-auto">
+                      <div class="art-img">
+                        <img src="./assets/imgs/main/image-14.jpg" alt="cover" />
+                      </div>
+                      <div class="art-text d-flex flex-column">
+                        <a href="#">Titolo canzone</a><a href="#">Nome artista</a>
+                      </div>
+                    </div>
+                    <div id="art-duration"><h5>3.15</h5></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DISCOGRAPHY SECTION -->
+              <div id="discography-container">
+                <div class="disc-text d-flex">
+                  <h2>Discografia</h2>
+                </div>
+                <div id="disc-cards" class="container-fluid mb-5">
+                  <div id="disc-container" class="row">
+                    <div class="col-2">
+                      <div class="disc-card d-flex flex-column gap-2">
+                        <div id="d-img-card">
+                          <img src="./assets/imgs/main/image-10.jpg" alt="album-cover" />
+                          <div class="d-play-circle d-flex"><img src="./assets/imgs/play-svg.svg" alt="play" /></div>
+                        </div>
+                        <div class="d-card-body d-flex flex-column">
+                          <h4>Titolo Album</h4>
+                          <h5>1980 · Album</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-2">
+                      <div class="disc-card d-flex flex-column gap-2">
+                        <div id="d-img-card">
+                          <img src="./assets/imgs/main/image-10.jpg" alt="album-cover" />
+                          <div class="d-play-circle d-flex"><img src="./assets/imgs/play-svg.svg" alt="play" /></div>
+                        </div>
+                        <div class="d-card-body d-flex flex-column">
+                          <h4>Titolo Album</h4>
+                          <h5>1980 · Album</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-2">
+                      <div class="disc-card d-flex flex-column gap-2">
+                        <div id="d-img-card">
+                          <img src="./assets/imgs/main/image-10.jpg" alt="album-cover" />
+                          <div class="d-play-circle d-flex"><img src="./assets/imgs/play-svg.svg" alt="play" /></div>
+                        </div>
+                        <div class="d-card-body d-flex flex-column">
+                          <h4>Titolo Album</h4>
+                          <h5>1980 · Album</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-2">
+                      <div class="disc-card d-flex flex-column gap-2">
+                        <div id="d-img-card">
+                          <img src="./assets/imgs/main/image-10.jpg" alt="album-cover" />
+                          <div class="d-play-circle d-flex"><img src="./assets/imgs/play-svg.svg" alt="play" /></div>
+                        </div>
+                        <div class="d-card-body d-flex flex-column">
+                          <h4>Titolo Album</h4>
+                          <h5>1980 · Album</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-2">
+                      <div class="disc-card d-flex flex-column gap-2">
+                        <div id="d-img-card">
+                          <img src="./assets/imgs/main/image-10.jpg" alt="album-cover" />
+                          <div class="d-play-circle d-flex"><img src="./assets/imgs/play-svg.svg" alt="play" /></div>
+                        </div>
+                        <div class="d-card-body d-flex flex-column">
+                          <h4>Titolo Album</h4>
+                          <h5>1980 · Album</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="disc-card d-flex flex-column gap-2">
+                        <div id="d-img-card">
+                          <img src="./assets/imgs/main/image-10.jpg" alt="album-cover" />
+                          <div class="d-play-circle d-flex"><img src="./assets/imgs/play-svg.svg" alt="play" /></div>
+                        </div>
+                        <div class="d-card-body d-flex flex-column">
+                          <h4>Titolo Album</h4>
+                          <h5>1980 · Album</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="search-card p-2">
+                <span class="text-white fw-bold fs-4 px-2">Musica</span>
+                <div class="col card1"><img src="./assets/imgs/search/image-1.jpeg" alt="" /></div>
+              </div>
             </div>
           </div>
 
@@ -562,5 +733,6 @@
         }
       };
     </script>
+    <script src="./style.js"></script>
   </body>
 </html>
