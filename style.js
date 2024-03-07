@@ -4,7 +4,9 @@
 let progress = document.getElementById("progress");
 let song = document.getElementById("song");
 let controls = document.getElementById("ctrl-play");
-let currentTimeDisplay = document.querySelector("#middle-bot small:first-child");
+let currentTimeDisplay = document.querySelector(
+  "#middle-bot small:first-child"
+);
 let durationDisplay = document.querySelector("#middle-bot small:last-child");
 const volume = document.getElementById("volumeRange");
 
@@ -84,32 +86,32 @@ const serachQuery = params.get("q");
 // COLLEGHIAMO IL PARAMETRO RICEVUTO DALL'INPUT CON L'URL PER AGGIRNARE DINAMICAMENTE L'ENDPOINT DELLA FETCH
 const form = document.getElementById("myForm");
 
-form.addEventListener("input", () => {
-  const inputSearch = document.getElementById("search-bar");
-  const inputQuery = inputSearch.value;
-  console.log(inputQuery);
-  const searchURL = `https://deezerdevs-deezer.p.rapidapi.com/search?q=${inputQuery}`;
+// form.addEventListener("input", () => {
+//   const inputSearch = document.getElementById("search-bar");
+//   const inputQuery = inputSearch.value;
+//   console.log(inputQuery);
+//   const searchURL = `https://deezerdevs-deezer.p.rapidapi.com/search?q=${inputQuery}`;
 
-  fetch(searchURL, {
-    headers: {
-      "X-RapidAPI-Key": apiKey,
-      "X-RapidAPI-Host": apiHost,
-    },
-  })
-    .then((response) => {
-      if (response.ok) {
-        console.log(response);
-        return response.json();
-      } else throw new Error("Qualcosa è andato storto");
-    })
+//   fetch(searchURL, {
+//     headers: {
+//       "X-RapidAPI-Key": apiKey,
+//       "X-RapidAPI-Host": apiHost,
+//     },
+//   })
+//     .then((response) => {
+//       if (response.ok) {
+//         console.log(response);
+//         return response.json();
+//       } else throw new Error("Qualcosa è andato storto");
+//     })
 
-    .then((result) => {
-      console.log(result);
-      const container = document.getElementById("search-container");
-      // container.innerHTML = "";
-    })
-    .catch((error) => console.log(error));
-});
+//     .then((result) => {
+//       console.log(result);
+//       const container = document.getElementById("search-container");
+//       // container.innerHTML = "";
+//     })
+//     .catch((error) => console.log(error));
+// });
 
 // ARTIST PAGE REQUEST
 // const artistURL = "https://deezerdevs-deezer.p.rapidapi.com/artist/";
