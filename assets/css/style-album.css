@@ -470,18 +470,6 @@ h2 {
   opacity: 0.4;
 }
 
-.bi-heart {
-  width: 20px;
-  color: white;
-  opacity: 0;
-}
-
-.bi-three-dots {
-  color: white;
-  font-size: 22px;
-  opacity: 0;
-}
-
 @media screen and (max-width: 1200px) {
   .title-h1-album h1 {
     font-size: 65px;
