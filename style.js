@@ -51,11 +51,11 @@ song.addEventListener("volumechange", function () {
   volume.value = this.volume;
 });
 
-// EVENTO ONCLICK DEL CUORE
+/* // EVENTO ONCLICK DEL CUORE
 document.getElementById("heart").addEventListener("click", function () {
   this.classList.toggle("filled"); // Aggiunge o rimuove la classe 'filled'
 });
-
+ */
 // GESTIONE DEL DROPDOWN DELLA SIDEBAR
 
 function dropdownBTN() {
@@ -84,7 +84,7 @@ const serachQuery = params.get("q");
 // COLLEGHIAMO IL PARAMETRO RICEVUTO DALL'INPUT CON L'URL PER AGGIRNARE DINAMICAMENTE L'ENDPOINT DELLA FETCH
 const form = document.getElementById("myForm");
 
-form.addEventListener("input", () => {
+/* form.addEventListener("input", () => {
   const inputSearch = document.getElementById("search-bar");
   const inputQuery = inputSearch.value;
   console.log(inputQuery);
@@ -109,7 +109,7 @@ form.addEventListener("input", () => {
       // container.innerHTML = "";
     })
     .catch((error) => console.log(error));
-});
+}); */
 
 // ARTIST PAGE REQUEST
 // const artistURL = "https://deezerdevs-deezer.p.rapidapi.com/artist/";
