@@ -301,7 +301,9 @@ main {
 }
 
 /* ////FOOTER//// */
-
+#footer {
+  margin-top: 100px;
+}
 .top-links {
   list-style-type: none;
   line-height: 1.9rem;
