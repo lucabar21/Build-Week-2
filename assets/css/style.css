@@ -646,6 +646,7 @@ h5 {
   padding: 0.8rem;
   border-radius: 8px;
   cursor: pointer;
+  min-height: 205px;
 }
 #d-img-card {
   position: relative;
@@ -658,7 +659,7 @@ h5 {
   color: #fff;
 }
 .d-card-body > h4 {
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 700;
 }
 .d-card-body > h5 {
