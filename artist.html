@@ -479,8 +479,8 @@
                 <h4>Mostra tutto</h4>
               </div>
               <div id="disc-cards" class="container-fluid mb-5">
-                <div class="row">
-                  <div class="col-2">
+                <div id="disc-container" class="row">
+                  <!-- <div class="col-2">
                     <div class="disc-card d-flex flex-column gap-2">
                       <div id="d-img-card">
                         <img src="./assets/imgs/main/image-10.jpg" alt="album-cover" />
@@ -555,7 +555,7 @@
                         <h5>1980 · Album</h5>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -690,7 +690,8 @@
           <img src="./assets/imgs/device-svg.svg" alt="device" />
           <div id="volume" class="d-flex align-items-center gap-2">
             <img src="./assets/imgs/volume-svg.svg" alt="volume" />
-            <div id="progress-vol"></div>
+            <!-- <div id="progress-vol"></div> -->
+            <input id="volumeRange" type="range" min="0" max="1" step="0.1" value="1" />
             <!-- AUDIO CONTROLS START-->
             <audio id="song">
               <source src="./assets/songs/Tycho Jones - Dont Be Afraid.mp3" type="audio/mpeg" />
@@ -710,6 +711,7 @@
       let controls = document.getElementById("ctrl-play");
       let currentTimeDisplay = document.querySelector("#middle-bot small:first-child");
       let durationDisplay = document.querySelector("#middle-bot small:last-child");
+      const volume = document.getElementById("volumeRange");
 
       song.onloadedmetadata = () => {
         progress.max = song.duration;
@@ -745,11 +747,43 @@
         const seconds = Math.floor(time % 60);
         return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
       }
+      // GESTIONE BARRA DI VOLUME
+
+      //       volume.addEventListener("input", function () {
+      //         song.volume = parseFloat(this.value);
+      //       });
+      //       song.addEventListener("volumechange", function () {
+      //         volume.value = this.volume;
+      //       });
+
+      //       document.addEventListener("DOMContentLoaded", function() {
+      //     const song = document.getElementById('myAudio');
+      //     const progress = document.getElementById('progress');
+
+      //     song.addEventListener('timeupdate', function() {
+      //         const value = (song.currentTime / song.duration) * 100;
+      //         progress.value = value;
+      //         updateRangeStyles();
+      //     });
+
+      //     progress.addEventListener('input', function() {
+      //         const time = (progress.value / 100) * song.duration;
+      //         song.currentTime = time;
+      //         updateRangeStyles();
+      //     });
+
+      //     function updateRangeStyles() {
+      //         // Calcola la percentuale del valore e applica uno stile personalizzato alla barra di input
+      //         const percent = (progress.value - progress.min) / (progress.max - progress.min) * 100;
+      //         progress.style.background = linear-gradient(to right, #4CAF50 0%, #4CAF50 ${percent}%, #ddd ${percent}%, #ddd 100%);
+      //     }
+      // });
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./style.js"></script>
   </body>
 </html>
