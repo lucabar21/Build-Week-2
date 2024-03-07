@@ -473,13 +473,13 @@ h2 {
 .bi-heart {
   width: 20px;
   color: white;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .bi-three-dots {
   color: white;
   font-size: 22px;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 @media screen and (max-width: 1200px) {
