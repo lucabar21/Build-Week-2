@@ -40,9 +40,9 @@ const titles = [
   "Beast Mode",
   "Written by Nija",
   "Lo-Fi Beats",
-  "Songs to sing in the car",
+  "Songs to sing",
   "All Out '10s",
-  "Your Summer Rewind",
+  "Your Summer",
   "Top Songs Global",
   "Unlocking Us", //Podcast
   "Soul Lounge",
@@ -101,12 +101,12 @@ const rowDiv = document.querySelector(".row.gap-2");
 const numTopCards = 8;
 
 for (let i = 0; i < numTopCards; i++) {
-  const randomIndex = getRandomNumber(0, images.length - 1);
+  const randomIndex = getRandomNumber(0, images.length);
 
   const topCardDiv = document.createElement("div");
   topCardDiv.setAttribute("id", "top-card");
-  topCardDiv.classList.add("col-auto", "flex-fill", "d-flex");
-  topCardDiv.style.width = "20%";
+  topCardDiv.classList.add("col-auto", "d-flex");
+  topCardDiv.style = "width:290px";
 
   const img = document.createElement("img");
   img.src = images[randomIndex];
@@ -130,4 +130,120 @@ for (let i = 0; i < numTopCards; i++) {
   topCardDiv.appendChild(playStopDiv);
 
   rowDiv.appendChild(topCardDiv);
+}
+////////////////RACCLTA TOP 50////////////////
+const top50Div = document.getElementById("top50");
+
+for (let i = 0; i < 6; i++) {
+  const randomIndex = getRandomNumber(0, images.length);
+
+  const divCol = document.createElement("div");
+  divCol.classList.add("col-2", "p-1");
+
+  const stileCardDiv = document.createElement("div");
+  stileCardDiv.classList.add("stile-card");
+
+  const positionButtonDiv = document.createElement("div");
+  positionButtonDiv.classList.add("position-button");
+
+  const image = document.createElement("img");
+  image.src = images[randomIndex];
+  image.classList.add("img-fluid", "card-img-top", "img-cards");
+
+  const playButtonDiv = document.createElement("div");
+  playButtonDiv.classList.add("play-button");
+  const playButtonSvg = document.createElement("svg");
+  playButtonSvg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  playButtonSvg.setAttribute("width", "16");
+  playButtonSvg.setAttribute("height", "16");
+  playButtonSvg.setAttribute("fill", "currentColor");
+  playButtonSvg.setAttribute("class", "bi bi-play-fill");
+  playButtonSvg.setAttribute("viewBox", "0 0 16 16");
+  const playButtonPath = document.createElement("path");
+  playButtonPath.setAttribute(
+    "d",
+    "m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+  );
+
+  playButtonSvg.appendChild(playButtonPath);
+  playButtonDiv.appendChild(playButtonSvg);
+
+  positionButtonDiv.appendChild(image);
+  positionButtonDiv.appendChild(playButtonDiv);
+
+  const cardTextDiv = document.createElement("div");
+  cardTextDiv.classList.add("card-text");
+
+  const h6 = document.createElement("h6");
+  h6.innerText = titles[randomIndex];
+
+  const p = document.createElement("p");
+  p.innerText = titles[randomIndex - 1];
+
+  cardTextDiv.appendChild(h6);
+  cardTextDiv.appendChild(p);
+
+  stileCardDiv.appendChild(positionButtonDiv);
+  stileCardDiv.appendChild(cardTextDiv);
+
+  divCol.appendChild(stileCardDiv);
+  top50Div.appendChild(divCol);
+}
+////////////////RACCLTA TOP 100////////////////
+const top100Div = document.getElementById("top100");
+
+for (let i = 0; i < 6; i++) {
+  const randomIndex = getRandomNumber(0, images.length);
+
+  const divCol = document.createElement("div");
+  divCol.classList.add("col-2", "p-1");
+
+  const stileCardDiv = document.createElement("div");
+  stileCardDiv.classList.add("stile-card");
+
+  const positionButtonDiv = document.createElement("div");
+  positionButtonDiv.classList.add("position-button");
+
+  const image = document.createElement("img");
+  image.src = images[randomIndex];
+  image.classList.add("img-fluid", "card-img-top", "img-cards");
+
+  const playButtonDiv = document.createElement("div");
+  playButtonDiv.classList.add("play-button");
+  const playButtonSvg = document.createElement("svg");
+  playButtonSvg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  // playButtonSvg.setAttribute("width", "16");
+  // playButtonSvg.setAttribute("height", "16");
+  playButtonSvg.setAttribute("fill", "currentColor");
+  playButtonSvg.setAttribute("class", "bi bi-play-fill");
+  playButtonSvg.setAttribute("viewBox", "0 0 16 16");
+  const playButtonPath = document.createElement("path");
+  playButtonPath.setAttribute(
+    "d",
+    "m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+  );
+
+  playButtonSvg.appendChild(playButtonPath);
+  playButtonDiv.appendChild(playButtonSvg);
+
+  positionButtonDiv.appendChild(image);
+  positionButtonDiv.appendChild(playButtonDiv);
+
+  const cardTextDiv = document.createElement("div");
+  cardTextDiv.classList.add("card-text");
+
+  const h6 = document.createElement("h6");
+  h6.innerText = titles[randomIndex];
+
+  const p = document.createElement("p");
+  p.innerText = titles[randomIndex - 1];
+
+  cardTextDiv.appendChild(h6);
+  cardTextDiv.appendChild(p);
+
+  stileCardDiv.appendChild(positionButtonDiv);
+  stileCardDiv.appendChild(cardTextDiv);
+
+  divCol.appendChild(stileCardDiv);
+  top100Div.appendChild(divCol);
 }
