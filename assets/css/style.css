@@ -188,6 +188,11 @@ main {
 /* #HEADER SETTING */
 #header {
   color: #fff;
+  /* 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; */
 }
 
 .left-arrow,
@@ -825,20 +830,28 @@ h5 {
 }
 
 .music-list:hover {
-  background-color: #888888;
-  opacity: 0.4;
+  background-color: #929292af;
+  opacity: 0.7;
 }
 
 .bi-heart {
   width: 20px;
-  color: white;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .bi-three-dots {
-  color: white;
   font-size: 22px;
-  /* opacity: 0; */
+  opacity: 0;
+}
+
+.music-list:hover .bi-heart {
+  opacity: 1;
+  color: white;
+}
+
+.music-list:hover .bi-three-dots {
+  opacity: 1;
+  color: white;
 }
 
 /* SEARCH PAGE SETTINGS */

@@ -129,6 +129,8 @@ fetch(albumURL, {
 
       h4Div.appendChild(h4);
 
+      h4Div.appendChild(h4);
+
       const firstDivTitle = document.createElement("div");
       firstDivTitle.classList.add("d-flex", "gap-3", "align-items-center");
 
