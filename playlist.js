@@ -57,20 +57,13 @@ const playlistContainer = document.getElementById("playlist");
 
 // Numero di elementi da generare
 const numItems = 8;
-
 // Generazione e inserimento di elementi dinamici nel div "playlist" dell'aside
 for (let i = 0; i < numItems; i++) {
   // Genera un indice casuale per selezionare l'immagine e il titolo
   const randomIndex = getRandomNumber(0, images.length - 1);
 
   const playlistDiv = document.createElement("div");
-  playlistDiv.classList.add(
-    "list-item",
-    "d-flex",
-    "align-items-center",
-    "py-1",
-    "ps-1"
-  );
+  playlistDiv.classList.add("list-item", "d-flex", "align-items-center", "py-1", "ps-1");
 
   const playlistImg = document.createElement("a");
   playlistImg.href = "#";
@@ -103,7 +96,7 @@ for (let i = 0; i < numItems; i++) {
 }
 
 ////////////////TOP CARDS////////////////
-const rowDiv = document.querySelector(".row.gap-2");
+const rowDiv = document.getElementById("top-cards-index");
 const numTopCards = 8;
 
 for (let i = 0; i < numTopCards; i++) {

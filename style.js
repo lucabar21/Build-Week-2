@@ -84,10 +84,6 @@ const serachQuery = params.get("q");
 // COLLEGHIAMO IL PARAMETRO RICEVUTO DALL'INPUT CON L'URL PER AGGIRNARE DINAMICAMENTE L'ENDPOINT DELLA FETCH
 const form = document.getElementById("myForm");
 
-let myId;
-// window.location.href = `artist/${myId}`;
-console.log(myId);
-
 form.addEventListener("input", () => {
   const inputSearch = document.getElementById("search-bar");
   const inputQuery = inputSearch.value;
@@ -112,10 +108,16 @@ form.addEventListener("input", () => {
       topSearchDiv.innerHTML = "";
       // GENERAZIONE SEZIONE ARTIST
 
-      myId = result.data[0].artist.id;
+      const ourAlbumId = result.data[0].album.id;
+      const ourArtistId = result.data[0].artist.id;
+      const ourTrackPreview = result.data[0].preview;
 
       const artistSearchDiv = document.createElement("div");
       artistSearchDiv.classList.add("col-6");
+
+      artistSearchDiv.addEventListener("click", () => {
+        window.location.href = `./artist.html?artistId=${ourArtistId}`;
+      });
 
       const h2topText = document.createElement("h2");
       h2topText.innerText = "Risultato più rilevante";
@@ -158,66 +160,82 @@ form.addEventListener("input", () => {
       trackMegaContainer.appendChild(h2topText2);
 
       // GENERAZIONE SEZIONE TRACKS
-      result.data.forEach((query, index) => {
+      result.data.slice(0, 5).forEach((query, index) => {
         // console.log(query);
-        if (index < 5) {
-          const trackContentDiv = document.createElement("div");
-          trackContentDiv.classList.add("d-flex", "gap-4");
-          trackContentDiv.setAttribute("id", "pop-tracks");
+        // if (index < 5) {
+        const trackContentDiv = document.createElement("div");
+        trackContentDiv.classList.add("d-flex", "gap-4");
+        trackContentDiv.setAttribute("id", "pop-tracks");
 
-          const numberDiv = document.createElement("div");
-          numberDiv.setAttribute("id", "art-num");
+        trackContentDiv.addEventListener("click", () => {
+          const srcTrackContainer = document.getElementById("song");
 
-          const h4Text = document.createElement("h4");
-          h4Text.innerText = index + 1;
+          if (srcTrackContainer.src === "") {
+            srcTrackContainer.src = ourTrackPreview;
+            srcTrackContainer.load();
+            srcTrackContainer.play();
+            playPause();
+            console.log(ourTrackPreview);
+          } else {
+            srcTrackContainer.src = ourTrackPreview;
+            srcTrackContainer.load();
+            srcTrackContainer.play();
+          }
+        });
 
-          const detailsDiv = document.createElement("div");
-          detailsDiv.classList.add("d-flex", "gap-3", "me-auto");
+        const numberDiv = document.createElement("div");
+        numberDiv.setAttribute("id", "art-num");
 
-          const trackImgDiv = document.createElement("div");
-          trackImgDiv.classList.add("art-img");
+        const h4Text = document.createElement("h4");
+        h4Text.innerText = index + 1;
 
-          const trackImg = document.createElement("img");
-          trackImg.src = query.album.cover;
+        const detailsDiv = document.createElement("div");
+        detailsDiv.classList.add("d-flex", "gap-3", "me-auto");
 
-          const textTrackDiv = document.createElement("div");
-          textTrackDiv.classList.add("art-text", "d-flex", "flex-column-reverse");
+        const trackImgDiv = document.createElement("div");
+        trackImgDiv.classList.add("art-img");
 
-          const TitleTrack = document.createElement("a");
-          TitleTrack.href = "#";
-          TitleTrack.innerText = query.title;
+        const trackImg = document.createElement("img");
+        trackImg.src = query.album.cover;
 
-          const artistTrackName = document.createElement("a");
-          artistTrackName.href = "#";
-          artistTrackName.innerText = query.artist.name;
+        const textTrackDiv = document.createElement("div");
+        textTrackDiv.classList.add("art-text", "d-flex", "flex-column-reverse");
 
-          const durationDiv = document.createElement("div");
-          durationDiv.setAttribute("id", "art-duration");
+        const TitleTrack = document.createElement("a");
+        TitleTrack.href = "#";
+        TitleTrack.innerText = query.title;
 
-          const h5Duration = document.createElement("h5");
-          h5Duration.innerText = query.duration;
+        const artistTrackName = document.createElement("a");
+        artistTrackName.href = "#";
+        artistTrackName.innerText = query.artist.name;
 
-          durationDiv.appendChild(h5Duration);
+        const durationDiv = document.createElement("div");
+        durationDiv.setAttribute("id", "art-duration");
 
-          textTrackDiv.appendChild(TitleTrack);
-          textTrackDiv.appendChild(artistTrackName);
+        const h5Duration = document.createElement("h5");
+        h5Duration.innerText = query.duration;
 
-          trackImgDiv.appendChild(trackImg);
+        durationDiv.appendChild(h5Duration);
 
-          detailsDiv.appendChild(trackImgDiv);
-          detailsDiv.appendChild(textTrackDiv);
+        textTrackDiv.appendChild(TitleTrack);
+        textTrackDiv.appendChild(artistTrackName);
 
-          numberDiv.appendChild(h4Text);
+        trackImgDiv.appendChild(trackImg);
 
-          trackContentDiv.appendChild(numberDiv);
-          trackContentDiv.appendChild(detailsDiv);
-          trackContentDiv.appendChild(durationDiv);
+        detailsDiv.appendChild(trackImgDiv);
+        detailsDiv.appendChild(textTrackDiv);
 
-          trackMegaContainer.appendChild(trackContentDiv);
+        numberDiv.appendChild(h4Text);
 
-          trackSearchDiv.appendChild(trackMegaContainer);
-          topSearchDiv.appendChild(trackSearchDiv);
-        }
+        trackContentDiv.appendChild(numberDiv);
+        trackContentDiv.appendChild(detailsDiv);
+        trackContentDiv.appendChild(durationDiv);
+
+        trackMegaContainer.appendChild(trackContentDiv);
+
+        trackSearchDiv.appendChild(trackMegaContainer);
+        topSearchDiv.appendChild(trackSearchDiv);
+        // }
       });
 
       // GENERAZIONE SEZIONE ALBUM
@@ -238,131 +256,60 @@ form.addEventListener("input", () => {
       artistCardsContainer.classList.add("row");
       artistCardsContainer.setAttribute("id", "disc-container");
 
-      result.data.forEach((bestTrack, index) => {
+      result.data.slice(0, 6).forEach((bestTrack) => {
         const divColumn = document.createElement("div");
         divColumn.classList.add("col-2");
-        if (index < 6) {
-          const album = bestTrack.album;
-          discographyDivContainer.innerHTML = "";
-          const divCard = document.createElement("div");
-          divCard.classList.add("disc-card", "d-flex", "flex-column", "gap-2");
+        // if (index < 6) {
+        const album = bestTrack.album;
+        discographyDivContainer.innerHTML = "";
+        const divCard = document.createElement("div");
+        divCard.classList.add("disc-card", "d-flex", "flex-column", "gap-2");
 
-          const divImgCard = document.createElement("div");
-          divImgCard.setAttribute("id", "d-img-card");
+        divCard.addEventListener("click", () => {
+          window.location.href = `./album_page.html?albumId=${ourAlbumId}`;
+        });
+        const divImgCard = document.createElement("div");
+        divImgCard.setAttribute("id", "d-img-card");
 
-          const imgCard = document.createElement("img");
-          imgCard.src = album.cover;
+        const imgCard = document.createElement("img");
+        imgCard.src = album.cover;
 
-          const playerBtn = document.createElement("div");
-          playerBtn.classList.add("d-play-circle", "d-flex");
+        const playerBtn = document.createElement("div");
+        playerBtn.classList.add("d-play-circle", "d-flex");
 
-          const iconePlay = document.createElement("img");
-          iconePlay.src = "./assets/imgs/play-svg.svg";
+        const iconePlay = document.createElement("img");
+        iconePlay.src = "./assets/imgs/play-svg.svg";
 
-          const divCardText = document.createElement("div");
-          divCardText.classList.add("d-card-body", "d-flex", "flex-column");
+        const divCardText = document.createElement("div");
+        divCardText.classList.add("d-card-body", "d-flex", "flex-column");
 
-          const h4Card = document.createElement("h4");
-          h4Card.innerText = album.title;
+        const h4Card = document.createElement("h4");
+        h4Card.innerText = album.title;
 
-          const h5Card = document.createElement("h5");
-          h5Card.innerText = album.type;
+        const h5Card = document.createElement("h5");
+        h5Card.innerText = album.type;
 
-          divCardText.appendChild(h4Card);
-          divCardText.appendChild(h5Card);
+        divCardText.appendChild(h4Card);
+        divCardText.appendChild(h5Card);
 
-          divImgCard.appendChild(imgCard);
-          playerBtn.appendChild(iconePlay);
-          divImgCard.appendChild(playerBtn);
+        divImgCard.appendChild(imgCard);
+        playerBtn.appendChild(iconePlay);
+        divImgCard.appendChild(playerBtn);
 
-          divCard.appendChild(divImgCard);
-          divCard.appendChild(divCardText);
+        divCard.appendChild(divImgCard);
+        divCard.appendChild(divCardText);
 
-          divColumn.appendChild(divCard);
-          artistCardsContainer.appendChild(divColumn);
+        divColumn.appendChild(divCard);
+        artistCardsContainer.appendChild(divColumn);
 
-          discographyDiv.appendChild(artistCardsContainer);
+        discographyDiv.appendChild(artistCardsContainer);
 
-          discographyText.appendChild(h2topText3);
+        discographyText.appendChild(h2topText3);
 
-          discographyDivContainer.appendChild(discographyText);
-          discographyDivContainer.appendChild(discographyDiv);
-        }
+        discographyDivContainer.appendChild(discographyText);
+        discographyDivContainer.appendChild(discographyDiv);
+        // }
       });
     })
     .catch((error) => console.log(error));
 });
-
-// ARTIST PAGE REQUEST
-// const artistURL = "https://deezerdevs-deezer.p.rapidapi.com/artist/";
-
-// // const params = new URLSearchParams(window.location.search);
-// // const serachQuery = params.get("/");
-
-// const serachQuery = "13";
-
-// fetch(artistURL + serachQuery + "&limit=5", {
-//   headers: {
-//     "X-RapidAPI-Key": apiKey,
-//     "X-RapidAPI-Host": apiHost,
-//   },
-// })
-//   .then((response) => {
-//     if (response.ok) {
-//       console.log(response);
-//       return response.json();
-//     } else throw new Error("Qualcosa è andato storto");
-//   })
-
-//   .then((artist) => {
-//     console.log(artist);
-//     console.log(typeof artist);
-
-//     artist.data.forEach((bestTrack) => {
-//       const album = bestTrack.album;
-//       const artistCardsContainer = document.getElementById("disc-container");
-//       // for (let i = 0; i < artist.length; i++) {
-//       //   const album = artist[i];
-
-//       const divColumn = document.createElement("div");
-//       divColumn.classList.add("col-2");
-
-//       const divCard = document.createElement("div");
-//       divCard.classList.add("disc-card", "d-flex", "flex-column", "gap-2");
-
-//       const divImgCard = document.createElement("div");
-//       divImgCard.setAttribute("id", "d-img-card");
-
-//       const imgCard = document.createElement("img");
-//       imgCard.src = album.cover;
-
-//       const playerBtn = document.createElement("div");
-//       playerBtn.classList.add("d-play-circle", "d-flex");
-
-//       const iconePlay = document.createElement("img");
-//       iconePlay.src = "./assets/imgs/play-svg.svg";
-
-//       const divCardText = document.createElement("div");
-//       divCardText.classList.add("d-card-body", "d-flex", "flex-column");
-
-//       const h4Card = document.createElement("h4");
-//       h4Card.innerText = album.title;
-
-//       const h5Card = document.createElement("h5");
-//       h5Card.innerText = album.type;
-
-//       divCardText.appendChild(h4Card);
-//       divCardText.appendChild(h5Card);
-
-//       divImgCard.appendChild(imgCard);
-//       playerBtn.appendChild(iconePlay);
-//       divImgCard.appendChild(playerBtn);
-
-//       divCard.appendChild(divImgCard);
-//       divCard.appendChild(divCardText);
-
-//       divColumn.appendChild(divCard);
-//       artistCardsContainer.appendChild(divColumn);
-//     });
-//   })
-//   .catch((error) => console.log(error));
