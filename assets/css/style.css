@@ -211,6 +211,12 @@ main {
 .bell {
   position: relative;
 }
+.bell:hover {
+  transform: scale(1.1);
+}
+.avatar:hover {
+  transform: scale(1.1);
+}
 #point {
   position: absolute;
   top: -5px;
@@ -224,6 +230,9 @@ main {
   padding: 0 8px;
   gap: 10px;
   cursor: pointer;
+}
+.install:hover {
+  transform: scale(1.1);
 }
 .install p {
   margin: unset;
@@ -936,6 +945,14 @@ h5 {
 }
 
 /* PREMIUM */
+.premium:hover {
+  background-color: rgba(255, 255, 255, 0.958);
+  color: rgb(10, 10, 10);
+  transform: scale(1.1);
+}
+.p-premium:hover {
+  color: rgb(10, 10, 10);
+}
 
 /* MEDIA QUERY SETTINGS */
 
