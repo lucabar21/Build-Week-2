@@ -865,9 +865,24 @@ h5 {
 }
 
 /* SEARCH PAGE SETTINGS */
-
+#searchbar-container {
+  background-color: #242424;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  padding: 8px;
+}
+#search-bar {
+  background-color: transparent;
+  border: none;
+  padding-left: 8px;
+}
+#search-bar:focus {
+  outline: none;
+}
 #search-bar::placeholder {
-  color: #ffff;
+  color: #757575;
+  font-size: 0.9rem;
+  font-weight: light;
 }
 .search-card {
   width: 200px;
