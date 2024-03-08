@@ -84,6 +84,10 @@ const serachQuery = params.get("q");
 // COLLEGHIAMO IL PARAMETRO RICEVUTO DALL'INPUT CON L'URL PER AGGIRNARE DINAMICAMENTE L'ENDPOINT DELLA FETCH
 const form = document.getElementById("myForm");
 
+let myId;
+// window.location.href = `artist/${myId}`;
+console.log(myId);
+
 form.addEventListener("input", () => {
   const inputSearch = document.getElementById("search-bar");
   const inputQuery = inputSearch.value;
@@ -107,6 +111,9 @@ form.addEventListener("input", () => {
       const topSearchDiv = document.getElementById("artist-container");
       topSearchDiv.innerHTML = "";
       // GENERAZIONE SEZIONE ARTIST
+
+      myId = result.data[0].artist.id;
+
       const artistSearchDiv = document.createElement("div");
       artistSearchDiv.classList.add("col-6");
 
@@ -148,6 +155,7 @@ form.addEventListener("input", () => {
 
       const h2topText2 = document.createElement("h2");
       h2topText2.innerText = "Brani";
+      trackMegaContainer.appendChild(h2topText2);
 
       // GENERAZIONE SEZIONE TRACKS
       result.data.forEach((query, index) => {
@@ -206,7 +214,6 @@ form.addEventListener("input", () => {
           trackContentDiv.appendChild(durationDiv);
 
           trackMegaContainer.appendChild(trackContentDiv);
-          trackMegaContainer.insertBefore(h2topText2, trackMegaContainer.firstChild);
 
           trackSearchDiv.appendChild(trackMegaContainer);
           topSearchDiv.appendChild(trackSearchDiv);
