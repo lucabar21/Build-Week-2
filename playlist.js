@@ -97,7 +97,7 @@ for (let i = 0; i < numItems; i++) {
 }
 
 ////////////////TOP CARDS////////////////
-const rowDiv = document.querySelector(".row.gap-2");
+const rowDiv = document.getElementById("top-cards-index");
 const numTopCards = 8;
 
 for (let i = 0; i < numTopCards; i++) {

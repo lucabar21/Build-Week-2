@@ -318,7 +318,7 @@
           </div>
           <!-- TOP CARDS START -->
           <div id="top-cards" class="container-fluid">
-            <div class="row gap-2">
+            <div id="top-cards-index"class="row gap-2">
               <!--<div id="top-card" class="col-auto flex-fill d-flex">
                 <img src="./assets/imgs/main/image-1.jpg" alt="cover" />
                 <div class="col-auto"><h4>A rotazione</h4></div>
@@ -484,9 +484,9 @@
         <!-- PLAYER BAR LEFT SECTION  -->
         <div id="left-player" class="col-4 d-flex column-gap-4 align-items-center">
           <div id="player-bar-img">
-            <img src="./assets/imgs/main/image-6.jpg" alt="cover" />
+            <img id ="track-img" src="./assets/imgs/main/image-6.jpg" alt="cover" />
           </div>
-          <div id="text-p-bar" class="d-flex flex-column"><a href="#">Song</a><a href="#">Artist</a></div>
+          <div id="text-p-bar" class="d-flex flex-column"><a id="track-name" href="#">Song</a><a id="track-artist" href="#">Artist</a></div>
           <div><img src="./assets/imgs/heart-svg.svg" alt="heart" /></div>
         </div>
 
@@ -522,7 +522,7 @@
             <input id="volumeRange" type="range" min="0" max="1" step="0.1" value="1" />
             <!-- AUDIO CONTROLS START-->
             <audio id="song">
-              <source src="./assets/songs/Tycho Jones - Dont Be Afraid.mp3" type="audio/mpeg" />
+              <source src="" type="audio/mpeg" />
             </audio>
 
             <!-- AUDIO CONTROLS END -->
