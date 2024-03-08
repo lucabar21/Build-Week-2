@@ -728,7 +728,8 @@ h5 {
 /* ALBUM PAGE SETTINGS */
 
 .section1 {
-  background-color: #645d5d;
+  background-color: #d3d3d3;
+  opacity: 10;
 }
 
 .img-mini {
