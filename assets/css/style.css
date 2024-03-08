@@ -416,7 +416,7 @@ h2 {
   transform: translateY(-10px);
 }
 
-.play-button svg {
+.play-button > svg {
   width: 69%;
   height: 65%;
 }
@@ -822,8 +822,17 @@ h5 {
   color: #a7a7a7;
 }
 
+.music-list:hover .info-artist :nth-child(2) {
+  color: white;
+}
+
 .music-list {
   border-radius: 1.8px;
+}
+
+.divNumTrack > h4 {
+  color: rgb(240, 223, 223);
+  font-size: 17px;
 }
 
 .time > span {

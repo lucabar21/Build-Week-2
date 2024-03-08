@@ -118,12 +118,13 @@ fetch(albumURL, {
       secondDivTrack.classList.add(
         "d-flex",
         "gap-4",
-        "my-2",
+        "my-1",
         "mx-3",
         "align-items-center"
       );
 
       const h4Div = document.createElement("div");
+      h4Div.classList.add("divNumTrack");
       const h4 = document.createElement("h4");
       h4.textContent = index + 1;
 
@@ -168,10 +169,10 @@ fetch(albumURL, {
       divTimeIcon.classList.add("d-flex", "gap-2");
 
       const divTime = document.createElement("div");
-      divTime.classList.add("time");
+      divTime.classList.add("time", "pt-1");
 
       const time = document.createElement("span");
-      time.style.margin = "unset";
+
       time.textContent = track.duration;
 
       const divIconMenu = document.createElement("div");
