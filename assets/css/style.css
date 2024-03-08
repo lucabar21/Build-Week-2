@@ -188,6 +188,11 @@ main {
 /* #HEADER SETTING */
 #header {
   color: #fff;
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  z-index: 9;
+  padding-block: 0.5rem;
 }
 
 .left-arrow,

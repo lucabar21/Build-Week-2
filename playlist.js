@@ -56,7 +56,7 @@ const titles = [
 const playlistContainer = document.getElementById("playlist");
 
 // Numero di elementi da generare
-const numItems = 8;
+const numItems = 10;
 
 // Generazione e inserimento di elementi dinamici nel div "playlist" dell'aside
 for (let i = 0; i < numItems; i++) {
@@ -154,8 +154,8 @@ for (let i = 0; i < 6; i++) {
   playButtonDiv.classList.add("play-button");
   const playButtonSvg = document.createElement("svg");
   playButtonSvg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-  playButtonSvg.setAttribute("width", "16");
-  playButtonSvg.setAttribute("height", "16");
+  // playButtonSvg.setAttribute("width", "16");
+  // playButtonSvg.setAttribute("height", "16");
   playButtonSvg.setAttribute("fill", "currentColor");
   playButtonSvg.setAttribute("class", "bi bi-play-fill");
   playButtonSvg.setAttribute("viewBox", "0 0 16 16");
