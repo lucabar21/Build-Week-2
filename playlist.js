@@ -64,7 +64,13 @@ for (let i = 0; i < numItems; i++) {
   const randomIndex = getRandomNumber(0, images.length - 1);
 
   const playlistDiv = document.createElement("div");
-  playlistDiv.classList.add("list-item", "d-flex", "align-items-center", "py-1", "ps-1");
+  playlistDiv.classList.add(
+    "list-item",
+    "d-flex",
+    "align-items-center",
+    "py-1",
+    "ps-1"
+  );
 
   const playlistImg = document.createElement("a");
   playlistImg.href = "#";
@@ -154,8 +160,8 @@ for (let i = 0; i < 6; i++) {
   playButtonDiv.classList.add("play-button");
   const playButtonSvg = document.createElement("svg");
   playButtonSvg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-  playButtonSvg.setAttribute("width", "16");
-  playButtonSvg.setAttribute("height", "16");
+  playButtonSvg.setAttribute("width", "89");
+  playButtonSvg.setAttribute("height", "65");
   playButtonSvg.setAttribute("fill", "currentColor");
   playButtonSvg.setAttribute("class", "bi bi-play-fill");
   playButtonSvg.setAttribute("viewBox", "0 0 16 16");
