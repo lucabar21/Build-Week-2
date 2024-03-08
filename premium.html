@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/css/circular-font.css" />
+
+    <style>
+      .card {
+        border: none;
+      }
+      .btnProva-gratis:hover {
+        transform: scale(1.1);
+      }
+      .btnHero-gratis:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body style="background-color: #121212">
+    <nav class="navbar" style="background-color: #090909">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-auto" href="./index.html">
+          <div class="d-flex align-items-center">
+            <svg
+              class="text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-spotify"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"
+              />
+            </svg>
+            <h3 class="d-flex fs-4 text-white px-2 mt-2">
+              Spotify <span class="mx-1" style="font-size: 6px; padding-top: 8px">&copy;</span>
+            </h3>
+          </div>
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row mt-5">
+        <div class="d-flex flex-column mx-auto col-6">
+          <h1 class="display-6 fw-bold" style="color: #ffffffee">
+            Ascolta senza limiti. Prova 1 mese di Premium Individual gratis.
+          </h1>
+          <p class="fw-semibold" style="color: #ffffffef">Dopo, solo 10,99 €/mese. Annulla quando vuoi.</p>
+
+          <p style="color: rgba(255, 255, 255, 0.863); font-size: 13px">
+            Gratis per 1 mese, poi 10,99 € al mese. Offerta disponibile solo se non hai ancora provato Premium. Si
+            applicano termini e condizioni.
+          </p>
+          <div class="btn d-flex">
+            <button
+              type="button"
+              class="btnHero-gratis h-100 rounded-pill w-50 btn fs-6 fw-bold mt-3"
+              style="background-color: #080808; color: rgba(255, 255, 255, 0.807)"
+            >
+              Prova gratis per 1 mese
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center mb-3 mt-5 mx-auto">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header py-3" style="background-color: #242424">
+            <div class="d-flex w-75 py-1 px-1 rounded" style="background-color: #ffd2d7">
+              <h4 class="fs-6 my-0 fw-bold">Gratis per 1 mese</h4>
+            </div>
+            <div class="d-flex premium mt-4">
+              <svg
+                class="text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-spotify"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"
+                />
+              </svg>
+              <p class="text-white ms-1">Premium</p>
+            </div>
+            <h1 class="card-title fs-2 mb-3 fw-bolder" style="color: #ffd2d7">Individual</h1>
+
+            <h4 class="fs-6 my-0 fw-bold text-white">Gratis per 1 mese</h4>
+            <h4 class="my-0 fw-bold mt-1" style="color: #a7a5a3; font-size: 14px">Dopo 10,99 € al mese</h4>
+          </div>
+          <div class="card-body rounded-bottom" style="background-color: #242424">
+            <ul class="list mt-3 mb-4 fw-bold text-white">
+              <li>1 account Premium</li>
+              <li>Annulla quando vuoi</li>
+            </ul>
+            <div class="btn d-flex justify-content-center">
+              <button
+                type="button"
+                class="btnProva-gratis rounded-pill w-100 btn fs-6 fw-bold mt-3"
+                style="background-color: #ffd2d7"
+              >
+                Prova gratis per 1 mese
+              </button>
+            </div>
+            <p class="mt-3 pb-4" style="color: #a7a5a3; font-size: 11px">
+              Gratis per 1 mese, poi 10,99 € al mese. Offerta disponibile solo se non hai ancora provato Premium. Si
+              applicano termini e condizioni.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3" style="background-color: #242424">
+            <div class="d-flex w-75 py-1 px-1 rounded" style="background-color: #c4b1d4">
+              <h4 class="fs-6 my-0 fw-bold">Gratis per 1 mese</h4>
+            </div>
+            <div class="d-flex premium mt-4">
+              <svg
+                class="text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-spotify"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"
+                />
+              </svg>
+              <p class="text-white ms-1">Premium</p>
+            </div>
+            <h1 class="card-title fs-2 mb-3 fw-bolder" style="color: #c4b1d4">Student</h1>
+
+            <h4 class="fs-6 my-0 fw-bold text-white">Gratis per 1 mese</h4>
+            <h4 class="my-0 fw-bold mt-1" style="color: #a7a5a3; font-size: 14px">Dopo 10,99 € al mese</h4>
+          </div>
+          <div class="card-body rounded-bottom" style="background-color: #242424">
+            <ul class="list mt-3 mb-4 fw-bold text-white">
+              <li>1 account Premium</li>
+              <li>Annulla quando vuoi</li>
+            </ul>
+            <div class="btn d-flex justify-content-center">
+              <button
+                type="button"
+                class="btnProva-gratis rounded-pill w-100 btn fs-6 fw-bold mt-3"
+                style="background-color: #c4b1d4"
+              >
+                Prova gratis per 1 mese
+              </button>
+            </div>
+            <p class="mt-3 pb-4" style="color: #a7a5a3; font-size: 11px">
+              Gratis per 1 mese, poi 5,99 € al mese. Premium Student: offerta disponibile solo per studenti iscritti
+              presso istituti accreditati
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3" style="background-color: #242424">
+            <div class="d-flex w-75 py-1 px-1 rounded" style="background-color: #ffc862">
+              <h4 class="fs-6 my-0 fw-bold">Gratis per 3 mesi</h4>
+            </div>
+            <div class="d-flex premium mt-4">
+              <svg
+                class="text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-spotify"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"
+                />
+              </svg>
+              <p class="text-white ms-1">Premium</p>
+            </div>
+            <h1 class="card-title fs-2 mb-3 fw-bolder" style="color: #ffc862">Duo</h1>
+
+            <h4 class="fs-6 my-0 fw-bold text-white">Gratis per 3 mesi</h4>
+            <h4 class="my-0 fw-bold mt-1" style="color: #a7a5a3; font-size: 14px">Dopo 14,99 € al mese</h4>
+          </div>
+          <div class="card-body rounded-bottom" style="background-color: #242424">
+            <ul class="list mt-3 mb-4 fw-bold text-white">
+              <li>2 account Premium</li>
+              <li>Annulla quando vuoi</li>
+            </ul>
+            <div class="btn d-flex justify-content-center">
+              <button
+                type="button"
+                class="btnProva-gratis rounded-pill w-100 btn fs-6 fw-bold mt-3"
+                style="background-color: #ffc862"
+              >
+                Prova gratis per 1 mese
+              </button>
+            </div>
+            <p class="mt-3 pb-4" style="color: #a7a5a3; font-size: 11px">
+              Per le coppie che risiedono allo stesso indirizzo. Si applicano termini e condizioni. Dopo i primi 3 mesi
+              il costo è di 14,99 € per 2 account Premium
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
