@@ -1,14 +1,15 @@
 /* HERO DINAMICA */
 
-const artistURL = " https://striveschool-api.herokuapp.com/api/deezer/artist/412/top?limit=10";
+const artistURL = " https://striveschool-api.herokuapp.com/api/deezer/artist/";
 const apiKeyArtist = "d2c36d775bmshf4d252608fc058ap1f7befjsnc823b8588e4a";
 const apiHostArtist = "deezerdevs-deezer.p.rapidapi.com";
 
-/* const params = new URLSearchParams(window.location.search); */
+const params2 = new URLSearchParams(window.location.search);
+const myArtistId = params2.get("artistId");
 
-// const searchQuery = "412";
+console.log(myArtistId);
 //Recuperiamo i dati con la fetch
-fetch(artistURL, {
+fetch(artistURL + myArtistId + `/top?limit=10`, {
   headers: {
     "X-RapidAPI-Key": apiKeyArtist,
     "X-RapidAPI-Host": apiHostArtist,

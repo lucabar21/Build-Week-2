@@ -46,7 +46,7 @@
               </li>
               <!--///////////////CERCA///////////////-->
               <li id="cercaBTN">
-                <a href="" class="d-flex align-items-center">
+                <a href="./cerca.html" class="d-flex align-items-center">
                   <svg
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                     xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@
             </div>
 
             <div id="playlist" class="px-2">
-              <div class="list-item d-flex align-items-center py-1 ps-1">
+              <!-- <div class="list-item d-flex align-items-center py-1 ps-1">
                 <a href="" id="playlist-img">
                   <img src="./assets/imgs/main/image-1.jpg" alt="" class="img-fluid rounded" />
                 </a>
@@ -358,7 +358,7 @@
                   <a href="" class="mb-0 fw-bold">Titolo</a>
                   <a href="" class="mb-0 fw-light">Playlist/Artista · autore</a>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </aside>
@@ -392,9 +392,13 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex title-album align-items-center">
-                <div class="img-container">
-                  <img src="assets/imgs/main/image-15.jpg" alt="image" class="img-fluid ms-2 mb-4 me-4 img-album" />
+              <div id="title-album" class="d-flex align-items-center">
+                <!-- <div class="img-container">
+                  <img
+                    src="assets/imgs/main/image-15.jpg"
+                    alt="image"
+                    class="img-fluid ms-2 mb-4 me-4 img-album"
+                  />
                 </div>
                 <div class="row d-flex flex-column gap-2">
                   <div>
@@ -404,11 +408,20 @@
                     <h1>Titolo Album</h1>
                   </div>
 
-                  <div class="d-flex align-items-center">
-                    <img src="assets/imgs/main/image-13.jpg" alt="mini-immagine" class="img-mini" />
-                    <p class="fw-bold mt-3 ms-1">autore anno 10 brani, min tot</p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <img
+                      src="assets/imgs/main/image-13.jpg"
+                      alt="mini-immagine"
+                      class="img-mini"
+                    />
+                    <p class="fw-bold mt-3 ms-1">autore</p>
+                    <span>&#8226;</span>
+                    <p class="fw-bold mt-3 ms-1">anno</p>
+                    <span>&#8226;</span>
+                    <p class="fw-bold mt-3 ms-1">brani</p>
+                    <p class="fw-bold mt-3 ms-1">min tot</p>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <!-- </div> -->
@@ -470,9 +483,9 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex align-items-center border-bottom border-light-subtle">
-              <div class="d-flex">
-                <span class="mb-1">#</span>
+            <div class="d-flex align-items-center lh-lg border-bottom border-light-subtle">
+              <div class="d-flex align-items-center">
+                <span>#</span>
 
                 <div>
                   <h6 style="margin: unset">Titolo</h6>
@@ -482,9 +495,9 @@
                 <i class="bi bi-clock mb-1"></i>
               </div>
             </div>
-            <div class="list-album">
-              <div class="music-list d-flex flex-column gap-3 my-3">
-                <div class="d-flex gap-4 mx-2 align-items-center">
+            <div id="list-album">
+              <!-- <div class="music-list d-flex flex-column gap-3 my-3">
+                <div class="d-flex gap-4 my-2 mx-3 align-items-center">
                   <div><h4>1</h4></div>
                   <div class="d-flex gap-3 align-items-center">
                     <div class="info-artist d-flex flex-column">
@@ -492,11 +505,19 @@
                     </div>
                   </div>
 
-                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                  <div class="ms-auto d-flex gap-5 align-items-center">
+                    <div><i class="bi bi-heart"></i></div>
+                    <div class="d-flex gap-2">
+                      <div>
+                        <span style="margin: unset">3.15</span>
+                      </div>
+                      <div><i class="bi bi-three-dots"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="music-list d-flex flex-column gap-3 my-3">
-                <div class="d-flex gap-4 mx-2 align-items-center">
+                <div class="d-flex gap-4 my-2 mx-3 align-items-center">
                   <div><h4>1</h4></div>
                   <div class="d-flex gap-3 align-items-center">
                     <div class="info-artist d-flex flex-column">
@@ -504,11 +525,19 @@
                     </div>
                   </div>
 
-                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                  <div class="ms-auto d-flex gap-5 align-items-center">
+                    <div><i class="bi bi-heart"></i></div>
+                    <div class="d-flex gap-2">
+                      <div>
+                        <h5 style="margin: unset">3.15</h5>
+                      </div>
+                      <div><i class="bi bi-three-dots"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="music-list d-flex flex-column gap-3 my-3">
-                <div class="d-flex gap-4 mx-2 align-items-center">
+                <div class="d-flex gap-4 my-2 mx-3 align-items-center">
                   <div><h4>1</h4></div>
                   <div class="d-flex gap-3 align-items-center">
                     <div class="info-artist d-flex flex-column">
@@ -516,11 +545,19 @@
                     </div>
                   </div>
 
-                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                  <div class="ms-auto d-flex gap-5 align-items-center">
+                    <div><i class="bi bi-heart"></i></div>
+                    <div class="d-flex gap-2">
+                      <div>
+                        <h5 style="margin: unset">3.15</h5>
+                      </div>
+                      <div><i class="bi bi-three-dots"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="music-list d-flex flex-column gap-3 my-3">
-                <div class="d-flex gap-4 mx-2 align-items-center">
+                <div class="d-flex gap-4 my-2 mx-3 align-items-center">
                   <div><h4>1</h4></div>
                   <div class="d-flex gap-3 align-items-center">
                     <div class="info-artist d-flex flex-column">
@@ -528,11 +565,19 @@
                     </div>
                   </div>
 
-                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                  <div class="ms-auto d-flex gap-5 align-items-center">
+                    <div><i class="bi bi-heart"></i></div>
+                    <div class="d-flex gap-2">
+                      <div>
+                        <h5 style="margin: unset">3.15</h5>
+                      </div>
+                      <div><i class="bi bi-three-dots"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="music-list d-flex flex-column gap-3 my-3">
-                <div class="d-flex gap-4 mx-2 align-items-center">
+                <div class="d-flex gap-4 my-2 mx-3 align-items-center">
                   <div><h4>1</h4></div>
                   <div class="d-flex gap-3 align-items-center">
                     <div class="info-artist d-flex flex-column">
@@ -540,11 +585,19 @@
                     </div>
                   </div>
 
-                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                  <div class="ms-auto d-flex gap-5 align-items-center">
+                    <div><i class="bi bi-heart"></i></div>
+                    <div class="d-flex gap-2">
+                      <div>
+                        <h5 style="margin: unset">3.15</h5>
+                      </div>
+                      <div><i class="bi bi-three-dots"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="music-list d-flex flex-column gap-3 my-3">
-                <div class="d-flex gap-4 mx-2 align-items-center">
+                <div class="d-flex gap-4 my-2 mx-3 align-items-center">
                   <div><h4>1</h4></div>
                   <div class="d-flex gap-3 align-items-center">
                     <div class="info-artist d-flex flex-column">
@@ -552,11 +605,19 @@
                     </div>
                   </div>
 
-                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                  <div class="ms-auto d-flex gap-5 align-items-center">
+                    <div><i class="bi bi-heart"></i></div>
+                    <div class="d-flex gap-2">
+                      <div>
+                        <h5 style="margin: unset">3.15</h5>
+                      </div>
+                      <div><i class="bi bi-three-dots"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="music-list d-flex flex-column gap-3 my-3">
-                <div class="d-flex gap-4 mx-2 align-items-center">
+                <div class="d-flex gap-4 my-2 mx-3 align-items-center">
                   <div><h4>1</h4></div>
                   <div class="d-flex gap-3 align-items-center">
                     <div class="info-artist d-flex flex-column">
@@ -564,11 +625,19 @@
                     </div>
                   </div>
 
-                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                  <div class="ms-auto d-flex gap-5 align-items-center">
+                    <div><i class="bi bi-heart"></i></div>
+                    <div class="d-flex gap-2">
+                      <div>
+                        <h5 style="margin: unset">3.15</h5>
+                      </div>
+                      <div><i class="bi bi-three-dots"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="music-list d-flex flex-column gap-3 my-3">
-                <div class="d-flex gap-4 mx-2 align-items-center">
+                <div class="d-flex gap-4 my-2 mx-3 align-items-center">
                   <div><h4>1</h4></div>
                   <div class="d-flex gap-3 align-items-center">
                     <div class="info-artist d-flex flex-column">
@@ -576,11 +645,19 @@
                     </div>
                   </div>
 
-                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                  <div class="ms-auto d-flex gap-5 align-items-center">
+                    <div><i class="bi bi-heart"></i></div>
+                    <div class="d-flex gap-2">
+                      <div>
+                        <h5 style="margin: unset">3.15</h5>
+                      </div>
+                      <div><i class="bi bi-three-dots"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="music-list d-flex flex-column gap-3 my-3">
-                <div class="d-flex gap-4 mx-2 align-items-center">
+                <div class="d-flex gap-4 my-2 mx-3 align-items-center">
                   <div><h4>1</h4></div>
                   <div class="d-flex gap-3 align-items-center">
                     <div class="info-artist d-flex flex-column">
@@ -588,11 +665,19 @@
                     </div>
                   </div>
 
-                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                  <div class="ms-auto d-flex gap-5 align-items-center">
+                    <div><i class="bi bi-heart"></i></div>
+                    <div class="d-flex gap-2">
+                      <div>
+                        <h5 style="margin: unset">3.15</h5>
+                      </div>
+                      <div><i class="bi bi-three-dots"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="music-list d-flex flex-column gap-3 my-3">
-                <div class="d-flex gap-4 mx-2 align-items-center">
+                <div class="d-flex gap-4 my-2 mx-3 align-items-center">
                   <div><h4>1</h4></div>
                   <div class="d-flex gap-3 align-items-center">
                     <div class="info-artist d-flex flex-column">
@@ -600,11 +685,19 @@
                     </div>
                   </div>
 
-                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                  <div class="ms-auto d-flex gap-5 align-items-center">
+                    <div><i class="bi bi-heart"></i></div>
+                    <div class="d-flex gap-2">
+                      <div>
+                        <h5 style="margin: unset">3.15</h5>
+                      </div>
+                      <div><i class="bi bi-three-dots"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="music-list d-flex flex-column gap-3 my-3">
-                <div class="d-flex gap-4 mx-2 align-items-center">
+                <div class="d-flex gap-4 my-2 mx-3 align-items-center">
                   <div><h4>1</h4></div>
                   <div class="d-flex gap-3 align-items-center">
                     <div class="info-artist d-flex flex-column">
@@ -612,9 +705,17 @@
                     </div>
                   </div>
 
-                  <div class="ms-auto align-items-center"><h5>3.15</h5></div>
+                  <div class="ms-auto d-flex gap-5 align-items-center">
+                    <div><i class="bi bi-heart"></i></div>
+                    <div class="d-flex gap-2">
+                      <div>
+                        <h5 style="margin: unset">3.15</h5>
+                      </div>
+                      <div><i class="bi bi-three-dots"></i></div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </div> -->
             </div>
             <!-- </div> -->
           </div>
@@ -928,6 +1029,8 @@
       integrity="sha384-YvpcrYf0tYbc1q8xk38n6g4l9g5y20mm5ez9tkguat9pv7szu9edOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./style.js"></script>
+    <!-- <script src="./style.js"></script> -->
+    <script src="album.style.js"></script>
+    <script src="playlist.js"></script>
   </body>
 </html>

@@ -188,6 +188,11 @@ main {
 /* #HEADER SETTING */
 #header {
   color: #fff;
+  /* 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; */
 }
 
 .left-arrow,
@@ -258,14 +263,15 @@ main {
   width: 60px;
   height: auto;
   object-fit: cover;
-  margin-right: auto;
+  /* margin-right: auto; */
 }
 #top-card h4 {
   font-size: 1rem;
-  margin-right: auto;
+  margin-left: auto;
   color: #fff;
   margin: unset;
-  margin-right: 3rem;
+  text-align: start;
+  /*margin-right: 3rem;*/
 }
 
 #play-stop {
@@ -410,7 +416,7 @@ h2 {
   transform: translateY(-10px);
 }
 
-.play-button svg {
+.play-button > svg {
   width: 69%;
   height: 65%;
 }
@@ -743,12 +749,12 @@ h5 {
   transform: scale(1.1);
 }
 
-.title-album {
+#title-album {
   margin-top: 40px;
 }
 
-.title-album h1 {
-  font-size: 100px;
+#title-album h1 {
+  font-size: 30px;
 }
 
 .title-h1-album {
@@ -797,14 +803,14 @@ h5 {
   height: 38px;
   transition: trasform 0.3s ease;
   cursor: pointer;
-}
-
-.elenco div h6 {
   color: white;
 }
 
 .three-point-menu svg:hover {
   transform: scale(1.2);
+  color: white;
+}
+.elenco div h6 {
   color: white;
 }
 
@@ -816,25 +822,46 @@ h5 {
   color: #a7a7a7;
 }
 
+.music-list:hover .info-artist :nth-child(2) {
+  color: white;
+}
+
 .music-list {
   border-radius: 1.8px;
 }
 
+.divNumTrack > h4 {
+  color: rgb(240, 223, 223);
+  font-size: 17px;
+}
+
+.time > span {
+  color: rgb(209, 209, 209);
+}
+
 .music-list:hover {
-  background-color: #888888;
-  opacity: 0.4;
+  background-color: #929292af;
+  opacity: 0.7;
 }
 
 .bi-heart {
   width: 20px;
-  color: white;
   opacity: 0;
 }
 
 .bi-three-dots {
-  color: white;
   font-size: 22px;
   opacity: 0;
+}
+
+.music-list:hover .bi-heart {
+  opacity: 1;
+  color: white;
+}
+
+.music-list:hover .bi-three-dots {
+  opacity: 1;
+  color: white;
 }
 
 /* SEARCH PAGE SETTINGS */
@@ -881,7 +908,7 @@ h5 {
 }
 
 /* DYNAIMC ELEMENTS SETTINGS */
-#serachArtistResult {
+#searchArtistResult {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 15px 30px;
