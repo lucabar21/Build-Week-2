@@ -192,7 +192,7 @@ main {
   top: 0;
   background-color: #121212;
   z-index: 9;
-  padding-block: 0.5rem;
+  padding-block: 1rem;
 }
 
 .left-arrow,
